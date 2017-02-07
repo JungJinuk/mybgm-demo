@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import MainPage from '../containers/MainPage/MainPage'
+import MainPage from '../containers/mainPage/MainPage'
 
 
 class App extends Component {
