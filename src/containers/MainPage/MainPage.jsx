@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
 import MainSearchBoard from './MainSearchBoard'
-import mainCSS from '../../public/style_main.css'
+import mainCSS from '../../style_main.css'
 
 class MainPage extends Component {
   render() {
