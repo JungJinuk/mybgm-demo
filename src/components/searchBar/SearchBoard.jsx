@@ -25,7 +25,7 @@ class MainSearchBoard extends Component {
         />
       </div>
     )
-0  }
+  }
 }
 
 MainSearchBoard.propTypes = {
