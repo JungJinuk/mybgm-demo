@@ -4,9 +4,11 @@ class CategoryNavi extends Component {
  
   render() {
     return (
-      <ul onClick={this.props.onClick}>
+      <li
+        className="nav nav-tabs" 
+        onClick={this.props.onClick}>
         {this.props.kind.Kind}
-      </ul>
+      </li>
     );
   }
 }

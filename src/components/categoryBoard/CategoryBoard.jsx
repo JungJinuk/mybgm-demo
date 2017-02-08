@@ -8,31 +8,6 @@ let categories = [
   {Kind: "Instruments", Child: ["Popular", "Electronic", "wind"]}
 ];
 
-  // {
-  //   Genres: 
-  //   {
-  //     Pop: ["Electropop", "Pop Folk", "Pop Rock", "Synthpop"],
-  //     Rock: ["Alternative", "Progressive", "Punk", "Rock 'n' Roll"],
-  //     Electronic: ["Breakbeat", "Club", "Dubstep", "EBM"]
-  //   }, 
-  // },
-  // {
-  //   Moods: 
-  //   {
-  //     Happy: ["Holiday", "Inspiring", "Motivational", "Uplifting"],
-  //     Energetic: ["Bouncy", "Crazy", "Epic", "Fashion"],
-  //     Sad: ["Dark", "Dramatic", "Emotion", "Melancholy"]
-  //   }, 
-  // },
-  // {
-  //   Instruments:
-  //   {
-  //     Popular: ["Acoustic guitar", "Drum", "Piano", "Keyboard"],
-  //     Electronic: ["Computer", "Bass", "Electric guitar", "Sampler"],
-  //     Wind: ["Clarinet", "Flute", "Horn", "Tuba"]
-  //   }
-  // }
-
 class CategoryBoard extends Component {
   constructor(props) {
     super(props);
@@ -73,7 +48,9 @@ class CategoryBoard extends Component {
     return (
       <div>
         <div>
-          {categoryNavigaion}
+          <ul className="nav nav-tabs">
+            {categoryNavigaion}  
+          </ul>
         </div>
         <div>
           <ul>
