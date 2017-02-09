@@ -6,11 +6,15 @@ class Footer extends Component {
     return (
       <div>
         <footer className="container-fluid text-center">
-          <Pannel />
-          <Pannel />
-          <Pannel />
-          <div className="">
-            
+          <div className="row">
+            <div className="col-lg-6 col-lg-offset-3">
+              <Pannel />
+              <Pannel />
+              <Pannel />
+            </div>
+          </div>
+          <div classId="company" className="">
+            Company
           </div>
         </footer>
       </div>

@@ -57,7 +57,7 @@ class CategoryBoard extends Component {
           </Nav>
         </div>
         <div className="col-xs-6 col-xs-offset-3">
-          <ul className="list-inline">
+          <ul className="list-group">
             {categoryDetail}
           </ul>
         </div>
