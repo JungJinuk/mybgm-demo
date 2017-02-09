@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import BestSeller from './BestSeller'
-import BestSellerCSS from '../../bestSeller.css'
+import BestSellerCSS from './bestSeller.css'
 
 let bestSellers = [
   { Title: 'City Of Stars', Artist: 'Ryan Gosling', Path: '/data/images/cover/City Of Stars.png', 
