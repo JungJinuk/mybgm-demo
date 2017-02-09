@@ -1,0 +1,36 @@
+.detail{
+  margin-left: 5px;
+  margin-right: 5px;
+  float : left;
+  width : 120px;
+  height: 50px;
+    }
+.cover{
+  float : left;
+  width :50px;
+  height: 50px;
+  display : block;
+}
+.wave{
+  width :200px;
+  height: 50px;
+  display : block;
+}
+li{
+  list-style-type: none;
+}
+.BestSeller{
+  display: block;
+  width: 430px;
+  margin: auto;
+}
+.play{
+  float: left;
+  display: block;
+  height: 50px;
+}
+.song{
+  background-color: red;
+  display:block;
+  
+}
