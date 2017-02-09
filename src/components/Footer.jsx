@@ -1,11 +1,17 @@
 import React, { Component, PropTypes } from 'react';
+import Pannel from './Pannel';
 
 class Footer extends Component {
   render() {
     return (
       <div>
         <footer className="container-fluid text-center">
-          <p>Footer Text</p>
+          <Pannel />
+          <Pannel />
+          <Pannel />
+          <div className="">
+            
+          </div>
         </footer>
       </div>
     );
