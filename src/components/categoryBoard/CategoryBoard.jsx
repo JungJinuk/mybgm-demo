@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import Category from './Category';
 import CategoryNavi from './CategoryNavi';
+import { Nav, NavItem } from 'react-bootstrap';
 
 let categories = [
   { Kind: "Genres", Child: ["Pop", "Rock", "Electronic"] },
@@ -20,7 +21,6 @@ class CategoryBoard extends Component {
   }
 
   handleClick(selectedIndex) {
-
     this.setState({
       selectedIndex: selectedIndex
     });
@@ -38,29 +38,26 @@ class CategoryBoard extends Component {
 
     const categoryNavigaion = categories.map((category, index) => {
       return (
-        <CategoryNavi
+        <NavItem
           onClick={() => this.handleClick(index)}
-          key={index}
-          kind={category}
-        />
+          eventKey={index}
+          key={index} >
+          {category.Kind}  
+        </NavItem>
       )
     });
 
     return (
       <div className="container-fluid">
-
-
-
         <div className="col-xs-6 col-xs-offset-3">
-
-
-          <ul className="nav nav-pills nav-justified">
-            <li role="presentaion">{categoryNavigaion}</li>
-          </ul>
+          <Nav
+            activeKey={this.state.selectedIndex} 
+            bsStyle="pills">
+            {categoryNavigaion}
+          </Nav>
         </div>
-
         <div className="col-xs-6 col-xs-offset-3">
-          <ul className="list-group">
+          <ul className="list-inline">
             {categoryDetail}
           </ul>
         </div>

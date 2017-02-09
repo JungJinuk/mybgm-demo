@@ -1,14 +1,17 @@
 import React, { Component, PropTypes } from 'react'
 import SearchBoard from '../../components/searchBar/SearchBoard'
-import mainCSS from '../../style_main.css'
 import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
+import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard'
+import css from '../../style_main.css';
+
 
 class MainPage extends Component {
   render() {
     return (
       <div>
-        <SearchBoard style={mainCSS}/>
+        <SearchBoard style={css}/>
         <CategoryBoard />
+        <BestSellerBoard/>
       </div>
     )
   }
