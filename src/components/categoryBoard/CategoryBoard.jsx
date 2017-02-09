@@ -48,11 +48,17 @@ class CategoryBoard extends Component {
 
     return (
       <div className="container-fluid">
+
+
+
         <div className="col-xs-6 col-xs-offset-3">
+
+
           <ul className="nav nav-pills nav-justified">
-            {categoryNavigaion}
+            <li role="presentaion">{categoryNavigaion}</li>
           </ul>
         </div>
+
         <div className="col-xs-6 col-xs-offset-3">
           <ul className="list-group">
             {categoryDetail}
