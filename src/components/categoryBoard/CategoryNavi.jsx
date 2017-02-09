@@ -5,7 +5,7 @@ class CategoryNavi extends Component {
   render() {
     return (
       <li
-        className="nav nav-tabs" 
+        className="active" 
         onClick={this.props.onClick}>
         {this.props.kind.Kind}
       </li>

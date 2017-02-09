@@ -3,9 +3,9 @@ import Category from './Category';
 import CategoryNavi from './CategoryNavi';
 
 let categories = [
-  {Kind: "Genres", Child: ["Pop", "Rock", "Electronic"]},
-  {Kind: "Moods", Child: ["Happy", "Energetic", "Sad"]},
-  {Kind: "Instruments", Child: ["Popular", "Electronic", "wind"]}
+  { Kind: "Genres", Child: ["Pop", "Rock", "Electronic"] },
+  { Kind: "Moods", Child: ["Happy", "Energetic", "Sad"] },
+  { Kind: "Instruments", Child: ["Popular", "Electronic", "wind"] }
 ];
 
 class CategoryBoard extends Component {
@@ -20,6 +20,7 @@ class CategoryBoard extends Component {
   }
 
   handleClick(selectedIndex) {
+
     this.setState({
       selectedIndex: selectedIndex
     });
@@ -46,14 +47,14 @@ class CategoryBoard extends Component {
     });
 
     return (
-      <div>
-        <div>
-          <ul className="nav nav-tabs">
-            {categoryNavigaion}  
+      <div className="container-fluid">
+        <div className="col-xs-6 col-xs-offset-3">
+          <ul className="nav nav-pills nav-justified">
+            {categoryNavigaion}
           </ul>
         </div>
-        <div>
-          <ul>
+        <div className="col-xs-6 col-xs-offset-3">
+          <ul className="list-group">
             {categoryDetail}
           </ul>
         </div>
