@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Pannel from './Pannel';
+import SNS from './SNS';
 
 class Footer extends Component {
   render() {
@@ -13,8 +14,8 @@ class Footer extends Component {
               <Pannel />
             </div>
           </div>
-          <div classId="company" className="">
-            Company
+          <div className="company">
+            <SNS />
           </div>
         </footer>
       </div>

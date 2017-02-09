@@ -10,5 +10,9 @@
 }
 
 .jumbotron {
-  background-color: lawngreen;
+  height: 500px;
+  background-color: powderblue;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
 }
