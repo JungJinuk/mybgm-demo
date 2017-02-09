@@ -21,12 +21,9 @@ class CategoryBoard extends Component {
   }
 
   handleClick(selectedIndex) {
-    
-
     this.setState({
       selectedIndex: selectedIndex
     });
-    console.log(this.state.selectedIndex);
   }
 
   render() {
@@ -43,7 +40,8 @@ class CategoryBoard extends Component {
       return (
         <NavItem
           onClick={() => this.handleClick(index)}
-          eventKey={index} >
+          eventKey={index}
+          key={index} >
           {category.Kind}  
         </NavItem>
       )
@@ -59,7 +57,7 @@ class CategoryBoard extends Component {
           </Nav>
         </div>
         <div className="col-xs-6 col-xs-offset-3">
-          <ul className="list-group">
+          <ul className="list-inline">
             {categoryDetail}
           </ul>
         </div>
