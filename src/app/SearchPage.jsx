@@ -4,7 +4,8 @@ class SearchPage extends Component {
   render() {
     return (
       <div>
-        SearchPage
+        <br/><br/><br/><br/>
+        <h1>SearchPage</h1>
       </div>
     );
   }

@@ -4,7 +4,8 @@ class DetailPage extends Component {
   render() {
     return (
       <div>
-        DetailPage
+        <br/><br/><br/><br/>
+        <h1>DetailPage</h1>
       </div>
     );
   }
