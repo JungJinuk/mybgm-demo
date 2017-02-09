@@ -1,22 +1,24 @@
 import React, { Component, PropTypes } from 'react';
 import { Nav, NavItem, Navbar, NavDropdown, MenuItem } from 'react-bootstrap';
 
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 const navbarInstance = (
   <Navbar>
     <Navbar.Header>
       <Navbar.Brand>
-        <a href="#">React-Bootstrap</a>
+        <a><Link to="/">React-Bootstrap</Link></a>
       </Navbar.Brand>
       <Navbar.Toggle />
     </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-        <NavItem eventKey={1} href="#">Link</NavItem>
-        <NavItem eventKey={2} href="#">Link</NavItem>
+        <NavItem eventKey={1}><Link to="/search">Search</Link></NavItem>
+        <NavItem eventKey={2}><Link to="/detail">Detail</Link></NavItem>
       </Nav>
       <Nav pullRight>
-        <NavItem eventKey={1} href="#">회원가입</NavItem>
-        <NavItem eventKey={2} href="#">로그인</NavItem>
+        <NavItem eventKey={1} href="/search">회원가입</NavItem>
+        <NavItem eventKey={2} href="/detail">로그인</NavItem>
       </Nav>
     </Navbar.Collapse>
   </Navbar>
