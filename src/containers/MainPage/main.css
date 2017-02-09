@@ -1,0 +1,14 @@
+.main {
+  background-color: blanchedalmond;
+  width: 100%;
+  height: 200px;
+}
+
+.search {
+  width: 90%;
+  height: 30px;
+}
+
+.jumbotron {
+  background-color: lawngreen;
+}
