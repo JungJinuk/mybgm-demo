@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 
 
 class BestSeller extends Component {
+  
   play(){
       //Sets the active song to the song being played. All other functions depend on this.
       activeSong = document.getElementById("song");
@@ -22,7 +23,7 @@ class BestSeller extends Component {
 
     return (
       <li className="BestSeller">
-        <img className="play" src="/data/images/etc/play-button.png" onClick={this.props.play}/>
+        <img className="play" src="/data/images/etc/play-button.png" onClick={this.props.play()}/>
         <img className="cover" src={bestSeller.Path} />
         <div className="detail"><p><b>{bestSeller.Title}</b></p>
           <p>{bestSeller.Artist}</p></div>

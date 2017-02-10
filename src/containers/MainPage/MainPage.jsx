@@ -4,6 +4,8 @@ import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
 import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard'
 import css from './main.css';
 
+//test
+import Wave from'./wave';
 
 class MainPage extends Component {
   render() {
@@ -12,6 +14,7 @@ class MainPage extends Component {
         <SearchBoard style={css}/>
         <CategoryBoard />
         <BestSellerBoard/>
+        <Wave/>
       </div>
     )
   }

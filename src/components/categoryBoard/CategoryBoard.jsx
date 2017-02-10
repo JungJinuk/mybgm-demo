@@ -42,20 +42,36 @@ class CategoryBoard extends Component {
           onClick={() => this.handleClick(index)}
           eventKey={index}
           key={index} >
-          {category.Kind}  
+          {category.Kind}
         </NavItem>
       )
     });
 
     return (
       <div className="container-fluid">
-        <div className="col-xs-6 col-xs-offset-3">
-          <Nav
-            activeKey={this.state.selectedIndex} 
-            bsStyle="pills">
-            {categoryNavigaion}
-          </Nav>
+        <div className="row">
+          <div className="col-xs-6 col-xs-offset-3">
+            <Nav
+              activeKey={this.state.selectedIndex}
+              bsStyle="pills">
+              {categoryNavigaion}
+            </Nav>
+          </div>
         </div>
+
+        <div className="col-xs-6 col-xs-offset-3">
+          <table className="table">
+            <tbody>
+              <tr>
+                <td className="text-center">
+                  {categoryDetail}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
         <div className="col-xs-6 col-xs-offset-3">
           <ul className="list-inline">
             {categoryDetail}
