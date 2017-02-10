@@ -12,10 +12,8 @@ class Footer extends Component {
               <Pannel />
               <Pannel />
               <Pannel />
+              <SNS />
             </div>
-          </div>
-          <div className="company">
-            <SNS />
           </div>
         </footer>
       </div>

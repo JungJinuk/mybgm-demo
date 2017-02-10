@@ -1,15 +1,19 @@
 import React, { Component, PropTypes } from 'react';
-import { NavItem } from 'react-bootstrap';
 
 class CategoryNavi extends Component {
  
   render() {
+
+    let className = (this.props.selected === this.props.id) ? "active" : "noActive";
+
     return (
-      <NavItem
-        eventKey={this.props.key}
+      <li
+        className={className}
         onClick={this.props.onClick}>
-        {this.props.kind.Kind}
-      </NavItem>
+        <a href="#">
+          {this.props.category.Kind}
+        </a>
+      </li>
     );
   }
 }

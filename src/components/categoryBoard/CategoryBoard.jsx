@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Category from './Category';
 import CategoryNavi from './CategoryNavi';
-import { Nav, NavItem } from 'react-bootstrap';
 
 let categories = [
   { Kind: "Genres", Child: ["Pop", "Rock", "Electronic"] },
@@ -28,7 +27,9 @@ class CategoryBoard extends Component {
 
   render() {
 
-    const categoryDetail = categories[this.state.selectedIndex].Child.map((element, index) => {
+    let selectedIndex = this.state.selectedIndex;
+
+    const categoryDetail = categories[selectedIndex].Child.map((element, index) => {
       return (
         <Category
           element={element}
@@ -38,24 +39,22 @@ class CategoryBoard extends Component {
 
     const categoryNavigaion = categories.map((category, index) => {
       return (
-        <NavItem
+        <CategoryNavi
+          selected={selectedIndex}
           onClick={() => this.handleClick(index)}
-          eventKey={index}
-          key={index} >
-          {category.Kind}
-        </NavItem>
-      )
+          category={category}
+          id={index}
+          key={index} />
+      );
     });
 
     return (
       <div className="container-fluid">
         <div className="col-xs-6 col-xs-offset-3">
           <div className="col-md-6 col-md-offset-3">
-            <Nav
-              activeKey={this.state.selectedIndex}
-              bsStyle="pills">
+            <ul className="nav nav-pills">
               {categoryNavigaion}
-            </Nav>
+            </ul>
           </div>
         </div>
         <div className="col-xs-6 col-xs-offset-3">

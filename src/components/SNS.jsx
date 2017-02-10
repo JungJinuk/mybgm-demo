@@ -3,11 +3,11 @@ import React, { Component, PropTypes } from 'react';
 class SNS extends Component {
   render() {
     return (
-      <div>
+      <div className="company">
         <address>
           <strong>MyBGM, Inc. 2017</strong>
         </address>
-        <span className="glyphicon plyphicon-search" aria-hidden="true"></span>
+        <span className="glyphicon glyphicon-search" aria-hidden="true"></span>
       </div>
     );
   }
