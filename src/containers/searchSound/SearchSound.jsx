@@ -1,11 +1,14 @@
 import React, { Component, PropTypes } from 'react';
+import NaviBar from '../../components/NaviBar/NaviBar';
+import Footer from '../../components/Footer/Footer';
 
 class SearchSound extends Component {
   render() {
     return (
       <div>
-        <br/><br/><br/><br/>
+        <NaviBar/>
         <h1>SearchSound</h1>
+        <Footer/>
       </div>
     );
   }

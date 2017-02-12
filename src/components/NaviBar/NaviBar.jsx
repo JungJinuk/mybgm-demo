@@ -1,10 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import {Link} from 'react-router';
 
 class NaviBar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-default navbar-fixed-top">
+      <nav className="navbar navbar-default">
         <div className="container-fluid col-xs-8 col-xs-offset-2">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -17,8 +17,8 @@ class NaviBar extends Component {
           </div>
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
-              <li><Link to="/sound/search"><span className="glyphicon glyphicon-search"></span>{' '}SEARCH</Link></li>
-              <li><Link to="/sound/detail"><span className="glyphicon glyphicon-music"></span>{' '}DETAIL</Link></li>
+              <li><Link to="sound/search"><span className="glyphicon glyphicon-search"></span>{' '}SEARCH</Link></li>
+              <li><Link to="sound/detail"><span className="glyphicon glyphicon-music"></span>{' '}DETAIL</Link></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/"><span className="glyphicon glyphicon-globe"></span>{' '}회원가입</Link></li>

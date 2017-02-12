@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import NaviBar from '../../components/NaviBar/NaviBar';
+import Footer from '../../components/Footer/Footer';
 import SearchBoard from '../../components/searchBar/SearchBoard';
 import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
 import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
@@ -8,9 +10,11 @@ class MainPage extends Component {
   render() {
     return (
       <div>
+        <NaviBar/>
         <SearchBoard style={css}/>
         <CategoryBoard />
         <BestSellerBoard/>
+        <Footer/>
       </div>
     );
   }
