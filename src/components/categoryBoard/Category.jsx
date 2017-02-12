@@ -8,8 +8,4 @@ class Category extends Component {
   }
 }
 
-Category.propTypes = {
-
-};
-
 export default Category;

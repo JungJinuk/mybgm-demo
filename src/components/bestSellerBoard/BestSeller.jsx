@@ -1,7 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 
-
-
 class BestSeller extends Component {
   play(){
       //Sets the active song to the song being played. All other functions depend on this.
@@ -32,9 +30,5 @@ class BestSeller extends Component {
     );
   }
 }
-
-BestSeller.propTypes = {
-
-};
 
 export default BestSeller;
