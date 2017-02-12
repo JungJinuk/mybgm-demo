@@ -19,8 +19,10 @@ class SearchBar extends Component {
   }
 
   handleSubmit(e) {
+    var searchText = this.state.searchText;
     e.preventDefault();
-    this.props.onUserInput(this.state.searchText);
+    if (searchText === "") return;
+    this.props.onUserInput(searchText);
     this.setState({
       searchText: ''
     });
