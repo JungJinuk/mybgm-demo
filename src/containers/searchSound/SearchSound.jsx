@@ -53,6 +53,7 @@ class SearchSound extends Component {
           searchKeywords={this.state.searchKeywords}
           onUserDelete={this.handleUserDelete}
         />
+        <BestSellerBoard />
         <Footer />
       </div>
     );
