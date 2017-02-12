@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
-import Pannel from './Pannel';
-import SNS from './SNS';
+import Pannel from '../Pannel';
+import SNS from '../sns/SNS';
 
 class Footer extends Component {
   render() {

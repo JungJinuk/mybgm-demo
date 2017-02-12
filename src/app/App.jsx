@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react'
-import MainPage from '../containers/mainPage/MainPage'
-import NaviBar from '../components/NaviBar';
-import DetailPage from './DetailPage';
-import SearchPage from './SearchPage';
+import MainPage from '../containers/main/Main'
+import NaviBar from '../components/NaviBar/NaviBar';
+import SoundDetail from '../containers/soundDetail/SoundDetail';
+import SearchSound from '../containers/searchSound/SearchSound';
 
-import Footer from '../components/Footer';
+import Footer from '../components/Footer/Footer';
 import navcss from '../components/categoryBoard/CategoryNav.css';
-import footcss from '../containers/MainPage/footer.css';
+import footcss from '../containers/main/footer.css';
 
 import { BrowserRouter as Router, Route, Link  } from 'react-router-dom';
 
@@ -17,8 +17,8 @@ class App extends Component {
         <div>
           <NaviBar />
           <Route exact path="/" component={MainPage} />
-          <Route path="/search" component={SearchPage} />
-          <Route path="/detail" component={DetailPage} />
+          <Route path="/sound/search" component={SearchSound} />
+          <Route path="/sound/detail" component={SoundDetail} />
           <Footer />
         </div>
       </Router>

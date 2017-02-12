@@ -1,18 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 
-class SearchPage extends Component {
+class SearchSound extends Component {
   render() {
     return (
       <div>
         <br/><br/><br/><br/>
-        <h1>SearchPage</h1>
+        <h1>SearchSound</h1>
       </div>
     );
   }
 }
 
-SearchPage.propTypes = {
+SearchSound.propTypes = {
 
 };
 
-export default SearchPage;
+export default SearchSound;

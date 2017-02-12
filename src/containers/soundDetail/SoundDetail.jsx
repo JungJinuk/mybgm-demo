@@ -1,18 +1,18 @@
 import React, { Component, PropTypes } from 'react';
 
-class DetailPage extends Component {
+class SoundDetail extends Component {
   render() {
     return (
       <div>
         <br/><br/><br/><br/>
-        <h1>DetailPage</h1>
+        <h1>SoundDetail</h1>
       </div>
     );
   }
 }
 
-DetailPage.propTypes = {
+SoundDetail.propTypes = {
 
 };
 
-export default DetailPage;
+export default SoundDetail;
