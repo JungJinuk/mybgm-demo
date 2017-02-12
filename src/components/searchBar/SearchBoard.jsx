@@ -1,9 +1,9 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router-dom';
 
 class MainSearchBoard extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.onClickSearchBar = this.onClickSearchBar.bind(this);
   }
@@ -36,12 +36,8 @@ class MainSearchBoard extends Component {
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
-MainSearchBoard.propTypes = {
-
-}
-
-export default MainSearchBoard
+export default MainSearchBoard;

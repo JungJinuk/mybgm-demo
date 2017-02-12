@@ -67,8 +67,4 @@ class CategoryBoard extends Component {
   }
 }
 
-CategoryBoard.propTypes = {
-
-};
-
 export default CategoryBoard;

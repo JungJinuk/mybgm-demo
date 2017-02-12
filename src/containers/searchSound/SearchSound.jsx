@@ -11,8 +11,4 @@ class SearchSound extends Component {
   }
 }
 
-SearchSound.propTypes = {
-
-};
-
 export default SearchSound;

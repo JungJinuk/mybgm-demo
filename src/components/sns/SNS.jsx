@@ -13,8 +13,4 @@ class SNS extends Component {
   }
 }
 
-SNS.propTypes = {
-
-};
-
 export default SNS;

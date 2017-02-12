@@ -13,8 +13,4 @@ class Pannel extends Component {
   }
 }
 
-Pannel.propTypes = {
-
-};
-
 export default Pannel;

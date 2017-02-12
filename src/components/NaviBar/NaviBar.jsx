@@ -1,11 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
-
 class NaviBar extends Component {
-
-
   render() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
@@ -31,7 +27,6 @@ class NaviBar extends Component {
           </div>
         </div>
       </nav>
-
     );
   }
 }

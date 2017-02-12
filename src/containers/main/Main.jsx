@@ -1,9 +1,8 @@
-import React, { Component, PropTypes } from 'react'
-import SearchBoard from '../../components/searchBar/SearchBoard'
+import React, { Component, PropTypes } from 'react';
+import SearchBoard from '../../components/searchBar/SearchBoard';
 import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
-import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard'
+import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
 import css from './main.css';
-
 
 class MainPage extends Component {
   render() {
@@ -13,12 +12,8 @@ class MainPage extends Component {
         <CategoryBoard />
         <BestSellerBoard/>
       </div>
-    )
+    );
   }
-}
-
-MainPage.propTypes = {
-
 }
 
 export default MainPage

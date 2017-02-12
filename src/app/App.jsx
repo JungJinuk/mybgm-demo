@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import MainPage from '../containers/main/Main'
+import Main from '../containers/main/Main'
 import NaviBar from '../components/NaviBar/NaviBar';
 import SoundDetail from '../containers/soundDetail/SoundDetail';
 import SearchSound from '../containers/searchSound/SearchSound';
@@ -16,18 +16,14 @@ class App extends Component {
       <Router>
         <div>
           <NaviBar />
-          <Route exact path="/" component={MainPage} />
+          <Route exact path="/" component={Main} />
           <Route path="/sound/search" component={SearchSound} />
           <Route path="/sound/detail" component={SoundDetail} />
           <Footer />
         </div>
       </Router>
-    )
+    );
   }
 }
 
-App.propTypes = {
-
-}
-
-export default App
+export default App;

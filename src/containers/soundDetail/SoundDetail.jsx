@@ -11,8 +11,4 @@ class SoundDetail extends Component {
   }
 }
 
-SoundDetail.propTypes = {
-
-};
-
 export default SoundDetail;

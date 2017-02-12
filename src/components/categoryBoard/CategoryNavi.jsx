@@ -18,8 +18,4 @@ class CategoryNavi extends Component {
   }
 }
 
-CategoryNavi.propTypes = {
-
-};
-
 export default CategoryNavi;
