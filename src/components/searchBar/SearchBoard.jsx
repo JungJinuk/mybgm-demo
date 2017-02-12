@@ -20,7 +20,7 @@ class MainSearchBoard extends Component {
         <h4>미디어 영상 제작을 위한 다양한 아티스트들의 저작권 무료 배경음악</h4><br />
         <form className="form-inline">
           <div className="input-group">
-            <Link to="/search">
+            <Link to="/sound/search">
               <input
                 className="form-control"
                 type="text"

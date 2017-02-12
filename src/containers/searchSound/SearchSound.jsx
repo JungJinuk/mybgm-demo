@@ -12,38 +12,48 @@ import searchKeywordBoardCSS from './search-keyword.css'
 class SearchSound extends Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
-      searchKeywords:[]
+      searchKeywords: []
     }
 
     this.handleUserInput = this.handleUserInput.bind(this);
+    this.handleUserDelete = this.handleUserDelete.bind(this);
+  }
+
+  handleUserDelete(clickedKeywordIndex) {
+    this.setState((prevState) => {
+      var updateKeywords = prevState.searchKeywords;
+      updateKeywords.splice(clickedKeywordIndex, 1);
+      return {
+        searchKeywords: updateKeywords
+      };
+    });
   }
 
   handleUserInput(searchText) {
+    var newSearchTextArr = searchText.split(" ");
     this.setState((prevState) => {
-      var localSearchText = searchText; 
       return {
-        searchKeywords: prevState.searchKeywords.concat(localSearchText)
+        searchKeywords: prevState.searchKeywords.concat(newSearchTextArr)
       };
     });
-    console.log(this.state.searchKeywords)
   }
-  
+
   render() {
     return (
       <div>
-        <NaviBar/>
-        <SearchBar 
+        <NaviBar />
+        <SearchBar
           style={searchBarCSS}
           onUserInput={this.handleUserInput}
         />
-        <SearchKeywordBoard 
+        <SearchKeywordBoard
           style={searchKeywordBoardCSS}
-          searchKeywords={this.state.searchKeywords}  
+          searchKeywords={this.state.searchKeywords}
+          onUserDelete={this.handleUserDelete}
         />
-        <BestSellerBoard />
-        <Footer/>
+        <Footer />
       </div>
     );
   }
