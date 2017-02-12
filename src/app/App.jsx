@@ -1,24 +1,26 @@
 import React, { Component, PropTypes } from 'react'
-import MainPage from '../containers/mainPage/MainPage'
-import NaviBar from '../components/NaviBar';
-import Footer from '../components/Footer';
+import Main from '../containers/main/Main'
+import SoundDetail from '../containers/soundDetail/SoundDetail';
+import SearchSound from '../containers/searchSound/SearchSound';
+
 import navcss from '../components/categoryBoard/CategoryNav.css';
-import footcss from '../containers/MainPage/footer.css';
+import footcss from '../containers/main/footer.css';
+
+import {Router, Route, hashHistory} from 'react-router';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <NaviBar style={navcss}/>
-        <MainPage />
-        <Footer style={footcss}/>
+        <Router history={hashHistory}>
+          <Route path="/" component={Main} />
+          <Route path="sound/search" component={SearchSound} />
+          <Route path="sound/detail" component={SoundDetail} />
+        </Router>
       </div>
-    )
+
+    );
   }
 }
 
-App.propTypes = {
-
-}
-
-export default App
+export default App;

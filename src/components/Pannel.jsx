@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class Pannel extends Component {
   render() {
     return (
-      <div>
+      <div className="col-lg-4">
         <h4>NAME</h4>
         <li className="divider"></li>
         <li>hi</li>
@@ -12,9 +12,5 @@ class Pannel extends Component {
     );
   }
 }
-
-Pannel.propTypes = {
-
-};
 
 export default Pannel;
