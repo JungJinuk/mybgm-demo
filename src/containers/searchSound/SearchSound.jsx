@@ -4,10 +4,46 @@ import NaviBar from '../../components/NaviBar/NaviBar';
 import Footer from '../../components/Footer/Footer';
 import SearchBar from './SearchBar';
 import SearchKeywordBoard from './SearchKeywordBoard';
+import SearchResultBoard from './SearchResultBoard';
 import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
 
 import searchBarCSS from './search-bar.css';
 import searchKeywordBoardCSS from './search-keyword.css'
+
+let musicDataSamples = [
+  {
+    Artist: {
+      Name: 'Imagine Dragons',
+    },
+    Music: {
+      Song: '/data/musics/Imagin Dragons-Amsterdam.mp3',
+      Title: 'Amsterdam',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 20,
+      Genre: ['Pop', 'Rock'],
+      Mood: ['Happy', 'Energetic'],
+      Instrument: ['Popular', 'Electronic']
+      Keyword: ['Trip']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Linkin Park',
+    },
+    Music: {
+      Song: '/data/musics/Linkin Park-Faint.mp3',
+      Title: 'Faint',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 12,
+      Genre: ['Pop', 'Rock'],
+      Mood: ['Energetic'],
+      Instrument: ['Popular', 'Electronic'],
+      Keyword: ['Powerful']
+    }
+  },
+];
 
 class SearchSound extends Component {
   constructor(props) {
@@ -41,6 +77,7 @@ class SearchSound extends Component {
   }
 
   render() {
+    let userSearchKeywords = this.state.searchKeywords;
     return (
       <div>
         <NaviBar />
@@ -50,8 +87,12 @@ class SearchSound extends Component {
         />
         <SearchKeywordBoard
           style={searchKeywordBoardCSS}
-          searchKeywords={this.state.searchKeywords}
+          searchKeywords={userSearchKeywords}
           onUserDelete={this.handleUserDelete}
+        />
+        <SearchResultBoard
+          searchKeywords={userSearchKeywords}
+          musicDataSamples = {musicDataSamples}
         />
         <BestSellerBoard />
         <Footer />
