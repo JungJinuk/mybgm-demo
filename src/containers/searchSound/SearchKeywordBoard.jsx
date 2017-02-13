@@ -14,7 +14,8 @@ class SearchKeywordBoard extends Component {
   }
 
   render() {
-    const searchKeywordCards = this.props.searchKeywords.map((keyword, id) => {
+    const h4Ment = "원하시는 검색어나 카테고리를 추가하세요",
+    searchKeywordCards = this.props.searchKeywords.map((keyword, id) => {
       return (
         <h4 key={id}>
           <span className="label label-info">{keyword}{' '}
@@ -30,7 +31,7 @@ class SearchKeywordBoard extends Component {
       <div className="search-keyword">
         <div className="container">
           <div className="row">
-            {searchKeywordCards}<h4>원하시는 검색어나 카테고리를 추가하세요</h4>
+            {searchKeywordCards}<h4>{h4Ment}</h4>
           </div>
           <hr />
         </div>

@@ -1,17 +1,20 @@
 import React, { Component, PropTypes } from 'react';
-
+import MusicElement from './MusicElement';
+import BestSellerCSS from '../../components/bestSellerBoard/bestSeller.css';
 
 class SearchResultBoard extends Component {
-  constructor(props) {
-    super(props);
-    
-  }
-  
+
+
+
   render() {
-    const filteredMusics = this.props.filteredList.map((music, index) => {
+    var filteredMusics = this.props.filteredList.map((music, index) => {
       return (
-        <li key={index}>{music.Music.Title}</li>
-      )
+        <MusicElement
+          key={index}
+          music={music}
+          style={BestSellerCSS}
+        />
+      );
     });
     return (
       <div>
@@ -22,7 +25,7 @@ class SearchResultBoard extends Component {
 }
 
 SearchResultBoard.propTypes = {
-  filteredList: PropTypes.objectOf(PropTypes.object)
+  filteredList: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default SearchResultBoard;

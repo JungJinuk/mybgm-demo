@@ -5,7 +5,8 @@ const opt={
   height:50,
   width:200
 }
-class WaverController extends Component {
+
+class WaveController extends Component {
   render() {
     return (
       <div>
@@ -20,8 +21,8 @@ class WaverController extends Component {
   }
 }
 
-WaverController.propTypes = {
+WaveController.propTypes = {
 
 };
 
-export default WaverController;
+export default WaveController;
