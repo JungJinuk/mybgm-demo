@@ -5,7 +5,6 @@ import Footer from '../../components/Footer/Footer';
 import SearchBar from './SearchBar';
 import SearchKeywordBoard from './SearchKeywordBoard';
 import SearchResultBoard from './SearchResultBoard';
-import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
 
 import searchBarCSS from './search-bar.css';
 import searchKeywordBoardCSS from './search-keyword.css'
@@ -21,9 +20,9 @@ let musicDataSamples = [
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 20,
-      Genre: ['Pop', 'Rock'],
+      Genre: ['Pop'],
       Mood: ['Happy', 'Energetic'],
-      Instrument: ['Popular', 'Electronic']
+      Instrument: ['Popular', 'Electronic'],
       Keyword: ['Trip']
     }
   },
@@ -68,16 +67,51 @@ class SearchSound extends Component {
   }
 
   handleUserInput(searchText) {
-    var newSearchTextArr = searchText.split(" ");
+    //var newSearchTextArr = searchText.split(" ");
     this.setState((prevState) => {
       return {
-        searchKeywords: prevState.searchKeywords.concat(newSearchTextArr)
+        searchKeywords: prevState.searchKeywords.concat(searchText)
       };
     });
   }
 
+  filterKeyword(keywords) {
+    var filteredList = musicDataSamples.filter((music, index) => {
+      var i, matchCount = 0, toLowerKeywords = keywords.map(keyword => keyword.toLowerCase()),
+          musicObj = music.Music;
+      var combineAllKeyword = musicObj.Genre.concat(
+                                musicObj.Mood, 
+                                musicObj.Instrument, 
+                                musicObj.Keyword, 
+                                musicObj.Title, 
+                                music.Artist.Name).map((keyword) => keyword.toLowerCase());
+
+      for (i = 0; i < toLowerKeywords.length; i++) {
+        combineAllKeyword.forEach((keyword) => {
+          if (keyword === toLowerKeywords[i]) matchCount++;
+        });
+      }
+
+      if (matchCount > 0) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+
+    return filteredList;
+  }
+
+  // testMethod(keywords) {
+  //   var toLower = keywords.map(keyword => keyword.toLowerCase());
+  //   console.log(toLower);
+  // }
+
   render() {
     let userSearchKeywords = this.state.searchKeywords;
+    //const filteredList = this.filterKeyword(userSearchKeywords);
+    //this.testMethod(userSearchKeywords);
+    const filteredList = this.filterKeyword(userSearchKeywords);
     return (
       <div>
         <NaviBar />
@@ -91,10 +125,8 @@ class SearchSound extends Component {
           onUserDelete={this.handleUserDelete}
         />
         <SearchResultBoard
-          searchKeywords={userSearchKeywords}
-          musicDataSamples = {musicDataSamples}
+          filteredList={filteredList}
         />
-        <BestSellerBoard />
         <Footer />
       </div>
     );

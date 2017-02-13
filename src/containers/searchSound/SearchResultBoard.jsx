@@ -6,21 +6,23 @@ class SearchResultBoard extends Component {
     super(props);
     
   }
-
   
-
   render() {
+    const filteredMusics = this.props.filteredList.map((music, index) => {
+      return (
+        <li key={index}>{music.Music.Title}</li>
+      )
+    });
     return (
       <div>
-
+        {filteredMusics}
       </div>
     );
   }
 }
 
 SearchResultBoard.propTypes = {
-  searchKeywords: PropTypes.arrayOf(PropTypes.string),
-  musicDataSamples: PropTypes.arrayOf(PropTypes.object)
+  filteredList: PropTypes.objectOf(PropTypes.object)
 };
 
 export default SearchResultBoard;

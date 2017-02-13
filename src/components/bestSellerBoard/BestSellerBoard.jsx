@@ -8,7 +8,7 @@ let bestSellers = [
   { Title: 'Counting Stars', Artist: 'One Republic', Path: '/data/images/cover/Counting Stars.png', 
     Wave: '/data/images/wave/Counting Stars_wave.png', Price: '1900', Song:'/data/musics/demo.wav' },
   { Title: 'Maps', Artist: 'Maroon5', Path: '/data/images/cover/Maps.png', 
-    Wave: '/data/images/wave/Maps_wave.png', Price: '1700', Song:'/data/musics/Imagin Dragons-Amsterdam.mp3' },
+    Wave: '/data/images/wave/Maps_wave.png', Price: '1700', Song:'/data/musics/Linkin Park-Faint.mp3' },
   { Title: 'Uptown Funk', Artist: 'Mark Ranson', Path: '/data/images/cover/Uptown Funk.png', 
     Wave: '/data/images/wave/Uptown Funk_wave.png', Price: '1700', Song:'/data/musics/Imagin Dragons-Amsterdam.mp3' },
   { Title: 'Plug In Baby', Artist: 'Muse', Path: '/data/images/cover/Plug In Baby.png', 
@@ -29,6 +29,7 @@ class BestSellerBoard extends Component {
           />
       )
     });
+    
     return (
       <div>
         <ul>
