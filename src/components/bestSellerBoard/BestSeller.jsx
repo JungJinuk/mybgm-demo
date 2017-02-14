@@ -7,7 +7,7 @@ class BestSeller extends Component {
     super(props);
     this.state = {
       playing: false
-    }
+    };
     this.handleTogglePlay = this.handleTogglePlay.bind(this);
   }
   handleTogglePlay() {
