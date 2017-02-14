@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
+
 class SearchBar extends Component {
   constructor(props) {
     super(props);
@@ -19,8 +20,10 @@ class SearchBar extends Component {
   }
 
   handleSubmit(e) {
+    var searchText = this.state.searchText;
     e.preventDefault();
-    this.props.onUserInput(this.state.searchText);
+    if (searchText.trim() === "") return;
+    this.props.onUserInput(searchText);
     this.setState({
       searchText: ''
     });
@@ -34,6 +37,7 @@ class SearchBar extends Component {
             <form onSubmit={this.handleSubmit}>
               <div className="input-group">
                 <input
+                  classID="search-input"
                   className="form-control"
                   type="text"
                   placeholder="What are you looking for? (ex: happy, rock, nature...)"
