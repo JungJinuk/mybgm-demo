@@ -191,16 +191,17 @@ class SearchSound extends Component {
     var filteredList = musicDataSamples.filter((music, index) => {
       var i, matchCount = 0, toLowerKeywords = keywords.map(keyword => keyword.toLowerCase()),
         musicObj = music.Music;
-      var combineAllKeyword = musicObj.Genre.concat(
-        musicObj.Mood,
-        musicObj.Instrument,
-        musicObj.Keyword,
-        musicObj.Title,
-        music.Artist.Name).map((keyword) => keyword.toLowerCase());
+      var combineAllKeyword =
+        musicObj.Genre.concat(
+          musicObj.Mood,
+          musicObj.Instrument,
+          musicObj.Keyword,
+          musicObj.Title,
+          music.Artist.Name).map((keyword) => keyword.toLowerCase());
 
       for (i = 0; i < toLowerKeywords.length; i++) {
         combineAllKeyword.forEach((keyword) => {
-          if (keyword === toLowerKeywords[i]) {
+          if (keyword.includes(toLowerKeywords[i])) {
             matchCount++;
           }
         });
@@ -235,9 +236,12 @@ class SearchSound extends Component {
           searchKeywords={userSearchKeywords}
           onUserDelete={this.handleUserDelete}
         />
-        <SearchResultBoard
-          filteredList={filteredList}
-        />
+        <div className="container">
+          <SearchResultBoard
+            filteredList={filteredList}
+          />
+        </div>
+
         <Footer />
       </div>
     );

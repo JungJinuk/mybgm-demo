@@ -4,8 +4,6 @@ import BestSellerCSS from '../../components/bestSellerBoard/bestSeller.css';
 
 class SearchResultBoard extends Component {
 
-
-
   render() {
     var filteredMusics = this.props.filteredList.map((music, index) => {
       return (
