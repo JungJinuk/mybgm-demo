@@ -6,14 +6,16 @@
 
 
 .list-group.autocomplete {
-  z-index: 1;
+  z-index: 99;
   position: absolute;
   overflow-y: auto;
   margin-bottom: 0;
   display: block;
+  max-height: 245px;
 }
 
 .list-group.autocomplete a {
-  padding-right: 200px;
+  padding-right: 100px;
+  cursor: pointer;
 }
 

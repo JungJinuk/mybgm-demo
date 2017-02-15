@@ -159,6 +159,12 @@ let musicDataSamples = [
   },
 ];
 
+let category = {
+  Genre: ['pop', 'rock', 'electronic'],
+  Moods: ['happy', 'energetic', 'sad'],
+  Instrument: ['popular', 'electronic', 'wind']
+};
+
 class SearchSound extends Component {
   constructor(props) {
     super(props);
@@ -232,6 +238,9 @@ class SearchSound extends Component {
         <SearchBar
           style={searchBarCSS}
           onUserInput={this.handleUserInput}
+          category={category}
+          musicData={musicDataSamples}
+          searchKeywords={userSearchKeywords}
         />
         <SearchKeywordBoard
           style={searchKeywordBoardCSS}
