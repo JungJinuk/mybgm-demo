@@ -3,3 +3,17 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+
+.list-group.autocomplete {
+  z-index: 1;
+  position: absolute;
+  overflow-y: auto;
+  margin-bottom: 0;
+  display: block;
+}
+
+.list-group.autocomplete a {
+  padding-right: 200px;
+}
+

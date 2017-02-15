@@ -19,7 +19,7 @@ class SearchKeywordBoard extends Component {
       return (
         <h4 key={id}>
           <span className="label label-info">{keyword}{' '}
-            <a onClick={this.handleKeywordDelete}>
+            <a onClick={this.handleKeywordDelete} className="my-remove-keyword">
               <span className="glyphicon glyphicon-remove" aria-hidden="true" title={id}/>
             </a>
           </span>

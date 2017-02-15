@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 
-
 class SearchBar extends Component {
   constructor(props) {
     super(props);
@@ -14,9 +13,10 @@ class SearchBar extends Component {
   }
 
   handleChange(e) {
+    //console.log(autoComplete);
     this.setState({
       searchText: e.target.value
-    });      
+    });
   }
 
   handleSubmit(e) {
@@ -29,6 +29,30 @@ class SearchBar extends Component {
     });
   }
 
+  autoComplete() {
+    var musicData = this.props.musicData,
+      category = this.props.category,
+      combinedKeyword = [];
+
+    musicData.forEach((music, index) => {
+      var musicObj = music.Music;
+
+      combinedKeyword.concat(
+        music.Artist.Name,
+        musicObj.Genre,
+        musicObj.Mood,
+        musicObj.Instrument,
+        musicObj.Keyword,
+        musicObj.Title
+      );
+    });
+
+    
+
+
+
+  }
+
   render() {
     return (
       <div className="search-input">
@@ -37,7 +61,6 @@ class SearchBar extends Component {
             <form onSubmit={this.handleSubmit}>
               <div className="input-group">
                 <input
-                  classID="search-input"
                   className="form-control"
                   type="text"
                   placeholder="What are you looking for? (ex: happy, rock, nature...)"
@@ -50,6 +73,13 @@ class SearchBar extends Component {
                   </button>
                 </span>
               </div>
+              <div className="list-group autocomplete">
+                <a href="#" className="list-group-item">Cras justo odio</a>
+                <a href="#" className="list-group-item">Dapibus ac facilisis in</a>
+                <a href="#" className="list-group-item">Morbi leo risus</a>
+                <a href="#" className="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" className="list-group-item">Vestibulum at eros</a>
+              </div>
             </form>
           </div>
         </div>
@@ -59,7 +89,9 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-  onUserInput: PropTypes.func
+  onUserInput: PropTypes.func,
+  category: PropTypes.object,
+  musicData: PropTypes.arrayOf(PropTypes.object)
 };
 
 export default SearchBar;
