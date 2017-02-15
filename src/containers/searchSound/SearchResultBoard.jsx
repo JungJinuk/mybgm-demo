@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import MusicElement from './MusicElement';
-import BestSellerCSS from '../../components/bestSellerBoard/bestSeller.css';
+import MusicListCSS from '../../components/bestSellerBoard/musicList.css';
 
 class SearchResultBoard extends Component {
 
@@ -10,7 +10,7 @@ class SearchResultBoard extends Component {
         <MusicElement
           key={index}
           music={music}
-          style={BestSellerCSS}
+          style={MusicListCSS}
         />
       );
     });

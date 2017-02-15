@@ -257,9 +257,7 @@ class SearchSound extends Component {
               </div>
             </div>
           </div>
-
         </div>
-
         <Footer />
       </div>
     );
