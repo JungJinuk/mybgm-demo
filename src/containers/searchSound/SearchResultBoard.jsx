@@ -15,7 +15,7 @@ class SearchResultBoard extends Component {
       );
     });
     return (
-      <div>
+      <div className="my-result">
         {filteredMusics}
       </div>
     );

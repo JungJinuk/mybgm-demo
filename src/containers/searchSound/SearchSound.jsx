@@ -5,9 +5,12 @@ import Footer from '../../components/Footer/Footer';
 import SearchBar from './SearchBar';
 import SearchKeywordBoard from './SearchKeywordBoard';
 import SearchResultBoard from './SearchResultBoard';
+import SearchGuideBoard from './SearchGuideBoard';
 
 import searchBarCSS from './search-bar.css';
-import searchKeywordBoardCSS from './search-keyword.css'
+import searchKeywordBoardCSS from './search-keyword.css';
+import searchResultBoardCSS from './search-resultboard.css';
+import searchGuideBoardCSS from './search-guidboard.css';
 
 let musicDataSamples = [
   {
@@ -216,13 +219,12 @@ class SearchSound extends Component {
       }
     });
 
-    console.log(filteredList);
     return filteredList;
   }
 
   render() {
     var userSearchKeywords = this.state.searchKeywords,
-      filteredList = this.filterKeyword(userSearchKeywords);
+        filteredList = this.filterKeyword(userSearchKeywords);
 
     return (
       <div>
@@ -236,10 +238,26 @@ class SearchSound extends Component {
           searchKeywords={userSearchKeywords}
           onUserDelete={this.handleUserDelete}
         />
-        <div className="container">
-          <SearchResultBoard
-            filteredList={filteredList}
-          />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="col-md-3">
+                <SearchGuideBoard
+                  style={searchGuideBoardCSS}
+                  onUserInput={this.handleUserInput}
+                  searchKeywords={userSearchKeywords}
+                />
+              </div>
+              <div className="col-md-9">
+                <SearchResultBoard
+                  filteredList={filteredList}
+                  style={searchResultBoardCSS}
+                  searchKeywords={userSearchKeywords}
+                />
+              </div>
+            </div>
+          </div>
+
         </div>
 
         <Footer />
