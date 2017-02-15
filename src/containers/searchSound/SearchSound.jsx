@@ -245,6 +245,7 @@ class SearchSound extends Component {
                 <SearchGuideBoard
                   style={searchGuideBoardCSS}
                   onUserInput={this.handleUserInput}
+                  onUserDelete={this.handleUserDelete}
                   searchKeywords={userSearchKeywords}
                 />
               </div>

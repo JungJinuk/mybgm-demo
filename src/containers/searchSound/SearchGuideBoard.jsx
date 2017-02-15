@@ -15,10 +15,18 @@ class SearchGuideBoard extends Component {
   }
 
   handleOptionClick(clickedCategory) {
-    this.props.onUserInput(clickedCategory);
+    var searchKeywords = this.props.searchKeywords;
+    if (searchKeywords.includes(clickedCategory)) {
+      this.props.onUserDelete(searchKeywords.indexOf(clickedCategory));
+    } else {
+      this.props.onUserInput(clickedCategory);
+    }
   }
 
   render() {
+    var handleOptionClick = this.handleOptionClick,
+        searchKeywords = this.props.searchKeywords;
+        
     return (
       <div className="nav-tabs-left">
         <h3>Search Guide</h3>
@@ -26,19 +34,22 @@ class SearchGuideBoard extends Component {
         <h4>Genre</h4>
         <SearchGuideOptions
           categoryName={category.Genre}
-          onUserCategoryClick={this.handleOptionClick}
+          onUserCategoryClick={handleOptionClick}
+          searchKeywords={searchKeywords}
         />
         <hr />
         <h4>Moods</h4>
         <SearchGuideOptions
           categoryName={category.Moods}
-          onUserCategoryClick={this.handleOptionClick}
+          onUserCategoryClick={handleOptionClick}
+          searchKeywords={searchKeywords}
         />
         <hr />
-        <h4>Moods</h4>
+        <h4>Instrument</h4>
         <SearchGuideOptions
           categoryName={category.Instrument}
-          onUserCategoryClick={this.handleOptionClick}
+          onUserCategoryClick={handleOptionClick}
+          searchKeywords={searchKeywords}
         />
       </div>
     );
@@ -47,6 +58,7 @@ class SearchGuideBoard extends Component {
 
 SearchGuideBoard.propTypes = {
   onUserInput: PropTypes.func,
+  onUserDelete: PropTypes.func,
   searchKeywords: PropTypes.arrayOf(PropTypes.string)
 };
 
