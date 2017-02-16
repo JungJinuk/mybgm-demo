@@ -21,6 +21,7 @@ class SearchBar extends Component {
   }
 
   handleChange(e) {
+    console.log("handleChange");
     this.setState({
       searchText: e.target.value,
       autoCompleteList: e.target.value ? this.autoComplete() : []
@@ -63,6 +64,7 @@ class SearchBar extends Component {
     });
 
     uniqKeywords = [...new Set(combinedKeyword)].map((keyword) => keyword.toLowerCase()).sort();
+    
     return uniqKeywords.filter((keyword) => { return keyword.indexOf(this.state.searchText) > -1; });
   }
 

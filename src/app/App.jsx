@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import Main from '../containers/main/Main'
 import SoundDetail from '../containers/soundDetail/SoundDetail';
 import SearchSound from '../containers/searchSound/SearchSound';
+import MusicRegistPage from '../containers/musicRegist/MusicRegistPage';
 
 import navcss from '../components/categoryBoard/CategoryNav.css';
 import footcss from '../containers/main/footer.css';
@@ -16,6 +17,7 @@ class App extends Component {
           <Route path="/" component={Main} />
           <Route path="sound/search" component={SearchSound} />
           <Route path="sound/detail" component={SoundDetail} />
+          <Route path="regist" component={MusicRegistPage} />
         </Router>
       </div>
     );

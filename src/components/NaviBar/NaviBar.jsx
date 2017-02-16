@@ -18,7 +18,7 @@ class NaviBar extends Component {
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul className="nav navbar-nav">
               <li><Link to="sound/search"><span className="glyphicon glyphicon-search"></span>{' '}SEARCH</Link></li>
-              <li><Link to="sound/detail"><span className="glyphicon glyphicon-music"></span>{' '}DETAIL</Link></li>
+              <li><Link to="/regist"><span className="glyphicon glyphicon-music"></span>{' '}음원등록하기</Link></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li><Link to="/"><span className="glyphicon glyphicon-globe"></span>{' '}회원가입</Link></li>
