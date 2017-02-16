@@ -5,9 +5,12 @@ import Footer from '../../components/Footer/Footer';
 import SearchBar from './SearchBar';
 import SearchKeywordBoard from './SearchKeywordBoard';
 import SearchResultBoard from './SearchResultBoard';
+import SearchGuideBoard from './SearchGuideBoard';
 
 import searchBarCSS from './search-bar.css';
-import searchKeywordBoardCSS from './search-keyword.css'
+import searchKeywordBoardCSS from './search-keyword.css';
+import searchResultBoardCSS from './search-resultboard.css';
+import searchGuideBoardCSS from './search-guidboard.css';
 
 let musicDataSamples = [
   {
@@ -156,6 +159,12 @@ let musicDataSamples = [
   },
 ];
 
+let category = {
+  Genre: ['pop', 'rock', 'electronic'],
+  Moods: ['happy', 'energetic', 'sad'],
+  Instrument: ['popular', 'electronic', 'wind']
+};
+
 class SearchSound extends Component {
   constructor(props) {
     super(props);
@@ -191,16 +200,17 @@ class SearchSound extends Component {
     var filteredList = musicDataSamples.filter((music, index) => {
       var i, matchCount = 0, toLowerKeywords = keywords.map(keyword => keyword.toLowerCase()),
         musicObj = music.Music;
-      var combineAllKeyword = musicObj.Genre.concat(
-        musicObj.Mood,
-        musicObj.Instrument,
-        musicObj.Keyword,
-        musicObj.Title,
-        music.Artist.Name).map((keyword) => keyword.toLowerCase());
+      var combineAllKeyword =
+        musicObj.Genre.concat(
+          musicObj.Mood,
+          musicObj.Instrument,
+          musicObj.Keyword,
+          musicObj.Title,
+          music.Artist.Name).map((keyword) => keyword.toLowerCase());
 
       for (i = 0; i < toLowerKeywords.length; i++) {
         combineAllKeyword.forEach((keyword) => {
-          if (keyword === toLowerKeywords[i]) {
+          if (keyword.includes(toLowerKeywords[i])) {
             matchCount++;
           }
         });
@@ -215,13 +225,12 @@ class SearchSound extends Component {
       }
     });
 
-    console.log(filteredList);
     return filteredList;
   }
 
   render() {
     var userSearchKeywords = this.state.searchKeywords,
-      filteredList = this.filterKeyword(userSearchKeywords);
+        filteredList = this.filterKeyword(userSearchKeywords);
 
     return (
       <div>
@@ -229,15 +238,36 @@ class SearchSound extends Component {
         <SearchBar
           style={searchBarCSS}
           onUserInput={this.handleUserInput}
+          category={category}
+          musicData={musicDataSamples}
+          searchKeywords={userSearchKeywords}
         />
         <SearchKeywordBoard
           style={searchKeywordBoardCSS}
           searchKeywords={userSearchKeywords}
           onUserDelete={this.handleUserDelete}
         />
-        <SearchResultBoard
-          filteredList={filteredList}
-        />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="col-md-3">
+                <SearchGuideBoard
+                  style={searchGuideBoardCSS}
+                  onUserInput={this.handleUserInput}
+                  onUserDelete={this.handleUserDelete}
+                  searchKeywords={userSearchKeywords}
+                />
+              </div>
+              <div className="col-md-9">
+                <SearchResultBoard
+                  filteredList={filteredList}
+                  style={searchResultBoardCSS}
+                  searchKeywords={userSearchKeywords}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     );

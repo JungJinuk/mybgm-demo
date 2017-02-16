@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 class MainSearchBoard extends Component {
   constructor(props) {
@@ -19,23 +19,28 @@ class MainSearchBoard extends Component {
       <div className="jumbotron text-center">
         <h1>저작권 무료 배경음악</h1><br />
         <h4>{ment}</h4><br />
-        <form className="form-inline">
-          <div className="input-group">
-            <Link to="/sound/search">
-              <input
-                className="form-control"
-                type="text"
-                size="150"
-                onClick={this.onClickSearchBar}
-                placeholder="What are you looking for? (ex: happy, rock, nature...)"
-              />
-
-              <div className="input-group-btn">
-                <button type="button" className="btn btn-info">search</button>
+        <div className="container">
+          <div className="row">
+            <form className="form-inline">
+              <div className="input-group">
+                <Link to="/sound/search">
+                  <input
+                    className="form-control"
+                    type="text"
+                    size="150"
+                    onClick={this.onClickSearchBar}
+                    placeholder="What are you looking for? (ex: happy, rock, nature...)"
+                  />
+                </Link>
+                <span className="input-group-btn">
+                  <Link to="/sound/search">
+                    <button className="btn btn-info">search</button>
+                  </Link>
+                </span>
               </div>
-            </Link>
+            </form>
           </div>
-        </form>
+        </div>
       </div>
     );
   }

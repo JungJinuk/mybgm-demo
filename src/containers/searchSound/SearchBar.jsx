@@ -1,32 +1,69 @@
 import React, { Component, PropTypes } from 'react';
-
+import AutoComplete from './AutoComplete';
 
 class SearchBar extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      searchText: ''
+      searchText: '',
+      autoCompleteList: []
     }
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.autoComplete = this.autoComplete.bind(this);
+    this.resetInputText = this.resetInputText.bind(this);
+  }
+
+  componentDidMount() {
+    this.userInput.focus();
   }
 
   handleChange(e) {
     this.setState({
-      searchText: e.target.value
-    });      
+      searchText: e.target.value,
+      autoCompleteList: e.target.value ? this.autoComplete() : []
+    });
+  }
+
+  resetInputText(searchText) {
+    if (!(searchText.trim() === "" || this.props.searchKeywords.includes(searchText))) {
+      this.props.onUserInput(searchText);
+    }
+
+    this.setState({
+      searchText: '',
+      autoCompleteList: []
+    });
   }
 
   handleSubmit(e) {
-    var searchText = this.state.searchText;
+    this.resetInputText(this.state.searchText);
     e.preventDefault();
-    if (searchText.trim() === "") return;
-    this.props.onUserInput(searchText);
-    this.setState({
-      searchText: ''
+  }
+
+  autoComplete() {
+    var musicData = this.props.musicData,
+      category = this.props.category,
+      combinedKeyword = [],
+      uniqKeywords = [];
+
+    musicData.forEach((music, index) => {
+      var musicObj = music.Music;
+
+      combinedKeyword = combinedKeyword.concat(
+        music.Artist.Name,
+        musicObj.Genre,
+        musicObj.Mood,
+        musicObj.Instrument,
+        musicObj.Keyword,
+        musicObj.Title
+      );
     });
+
+    uniqKeywords = [...new Set(combinedKeyword)].map((keyword) => keyword.toLowerCase()).sort();
+    return uniqKeywords.filter((keyword) => { return keyword.indexOf(this.state.searchText) > -1; });
   }
 
   render() {
@@ -37,7 +74,7 @@ class SearchBar extends Component {
             <form onSubmit={this.handleSubmit}>
               <div className="input-group">
                 <input
-                  classID="search-input"
+                  ref={(input) => { this.userInput = input; }}
                   className="form-control"
                   type="text"
                   placeholder="What are you looking for? (ex: happy, rock, nature...)"
@@ -50,6 +87,11 @@ class SearchBar extends Component {
                   </button>
                 </span>
               </div>
+              <AutoComplete
+                autoCompleteArray={this.state.autoCompleteList}
+                resetInputText={this.resetInputText}
+                inputText={this.state.searchText}
+              />
             </form>
           </div>
         </div>
@@ -59,7 +101,10 @@ class SearchBar extends Component {
 }
 
 SearchBar.propTypes = {
-  onUserInput: PropTypes.func
+  onUserInput: PropTypes.func,
+  category: PropTypes.object,
+  musicData: PropTypes.arrayOf(PropTypes.object),
+  searchKeywords: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default SearchBar;

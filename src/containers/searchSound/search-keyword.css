@@ -8,3 +8,7 @@ h4 {
   margin-right: 5px;
   color: darkgray;
 }
+
+.my-remove-keyword {
+  cursor: pointer;
+}
