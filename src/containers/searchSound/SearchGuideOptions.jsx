@@ -30,7 +30,6 @@ class SearchGuideOptions extends Component {
     });
 
     return (
-
       <div className="my-categorylist">
         {categoryList}
       </div>
