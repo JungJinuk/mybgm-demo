@@ -16,6 +16,7 @@ class MusicRegist extends Component {
           <hr />
           <RegistForm />
         </div>
+
         <Footer />
       </div>
     );
