@@ -47,7 +47,6 @@ class RegistForm extends Component {
 
     return (
       <form className="form-horizontal">
-        <h3>음원 정보</h3>
         <div className="form-group">
           <label for="trackName" className="col-md-2 control-label">트랙이름</label>
           <div className="col-md-10">

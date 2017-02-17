@@ -69,9 +69,13 @@ class SearchBar extends Component {
   }
 
   render() {
+    const searchMent = "원하는 음악을 쉽게 검색하세요"
     return (
       <div className="search-input">
         <div className="container">
+          <div className="my-display-middle my-text-gray my-center">
+            <h3>{searchMent}</h3>
+          </div>
           <div className="row">
             <form onSubmit={this.handleSubmit}>
               <div className="input-group">

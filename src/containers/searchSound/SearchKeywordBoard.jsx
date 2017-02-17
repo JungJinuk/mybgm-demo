@@ -7,8 +7,8 @@ class SearchKeywordBoard extends Component {
     this.handleKeywordDelete = this.handleKeywordDelete.bind(this);
   }
 
-  handleKeywordDelete(e) {
-    var targetId = e.target.title;
+  handleKeywordDelete(id) {
+    var targetId = id;
     if (targetId === null && targetId === undefined) return;
     this.props.onUserDelete(targetId);
   }
@@ -19,8 +19,8 @@ class SearchKeywordBoard extends Component {
       return (
         <h4 key={id} className="my-keyword-board">
           <span className="label label-info">{keyword}{' '}
-            <a onClick={this.handleKeywordDelete} className="my-remove-keyword">
-              <span className="glyphicon glyphicon-remove" aria-hidden="true" title={id}/>
+            <a onClick={() => this.handleKeywordDelete(id)} className="my-remove-keyword">
+              <span className="glyphicon glyphicon-remove" aria-hidden="true" />
             </a>
           </span>
         </h4>

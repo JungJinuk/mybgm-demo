@@ -7,8 +7,8 @@ class SearchGuideOptions extends Component {
     this.handleCategoryClick = this.handleCategoryClick.bind(this);
   }
 
-  handleCategoryClick(e) {
-    this.props.onUserCategoryClick(e.target.title);
+  handleCategoryClick(category) {
+    this.props.onUserCategoryClick(category);
   }
 
   render() {
@@ -23,8 +23,7 @@ class SearchGuideOptions extends Component {
       return (
         <button
           key={index}
-          title={element}
-          onClick={this.handleCategoryClick}
+          onClick={() => this.handleCategoryClick(element)}
           className={btnState}>{element}</button>
       );
     });

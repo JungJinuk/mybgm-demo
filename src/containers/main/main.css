@@ -1,3 +1,10 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+
 .jumbotron {
   margin-top: 50px;
   height: 500px;
@@ -6,10 +13,40 @@
   color: white;
 }
 
-.my-search-sound-page {
+.my-search-sound-page,.my-main-page,.my-regist-page {
   margin-top: 50px;
 }
 
-.my-main-page {
-  margin-top: 50px;
+.main-input {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/background.jpg");
+  padding-top: 327px;
+  height: 500px;
 }
+
+.my-display-middle {
+  position:absolute;
+  top:25%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);   
+}
+
+.my-text-white{
+  color:#fff!important
+}
+
+.my-text-gray{
+  color: dimgray;
+}
+
+.my-jumbo{
+  font-size:64px!important
+}
+
+.my-center{
+  text-align:center
+}
+
+
