@@ -1,18 +1,15 @@
-.main {
-  background-color: blanchedalmond;
-  width: 100%;
-  height: 200px;
-}
-
-.search {
-  width: 90%;
-  height: 30px;
-}
-
 .jumbotron {
+  margin-top: 50px;
   height: 500px;
   background-color: powderblue;
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding: 150px;
   color: white;
+}
+
+.my-search-sound-page {
+  margin-top: 50px;
+}
+
+.my-main-page {
+  margin-top: 50px;
 }

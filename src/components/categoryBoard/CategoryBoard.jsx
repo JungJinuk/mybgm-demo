@@ -51,7 +51,7 @@ class CategoryBoard extends Component {
     return (
       <div className="container-fluid">
         <div className="col-xs-6 col-xs-offset-3">
-          <div className="col-md-6 col-md-offset-3">
+          <div className="col-md-9 col-md-offset-3">
             <ul className="nav nav-pills">
               {categoryNavigaion}
             </ul>

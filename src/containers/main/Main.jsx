@@ -9,7 +9,7 @@ import css from './main.css';
 class MainPage extends Component {
   render() {
     return (
-      <div>
+      <div className="my-main-page">
         <NaviBar/>
         <SearchBoard style={css}/>
         <CategoryBoard />

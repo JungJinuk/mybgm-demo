@@ -236,7 +236,7 @@ class SearchSound extends Component {
       filteredList = this.filterKeyword(userSearchKeywords);
 
     return (
-      <div>
+      <div className="my-search-sound-page">
         <NaviBar />
         <SearchBar
           style={searchBarCSS}
