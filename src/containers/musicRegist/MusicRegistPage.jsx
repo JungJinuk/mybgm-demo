@@ -11,12 +11,13 @@ class MusicRegist extends Component {
         <NaviBar />
         <div className="container">
           <hr />
-          <h1>마이비지엠 음원 등록하기</h1>
-          <ArtistInfo />
-          <hr />
+          <div className="col-md-offset-1 col-md-11">
+            <h1>마이비지엠 음원 등록하기</h1>
+            <ArtistInfo /> 
+            <hr />
+          </div>
           <RegistForm />
         </div>
-
         <Footer />
       </div>
     );

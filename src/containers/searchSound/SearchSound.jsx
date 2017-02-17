@@ -233,7 +233,7 @@ class SearchSound extends Component {
 
   render() {
     var userSearchKeywords = this.state.searchKeywords,
-        filteredList = this.filterKeyword(userSearchKeywords);
+      filteredList = this.filterKeyword(userSearchKeywords);
 
     return (
       <div>
@@ -252,23 +252,21 @@ class SearchSound extends Component {
         />
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-12">
-              <div className="col-md-3">
-                <SearchGuideBoard
-                  style={searchGuideBoardCSS}
-                  onUserInput={this.handleUserInput}
-                  onUserDelete={this.handleUserDelete}
-                  searchKeywords={userSearchKeywords}
-                  category={category}
-                />
-              </div>
-              <div className="col-md-9">
-                <SearchResultBoard
-                  filteredList={filteredList}
-                  style={searchResultBoardCSS}
-                  searchKeywords={userSearchKeywords}
-                />
-              </div>
+            <div className="col-md-2">
+              <SearchGuideBoard
+                style={searchGuideBoardCSS}
+                onUserInput={this.handleUserInput}
+                onUserDelete={this.handleUserDelete}
+                searchKeywords={userSearchKeywords}
+                category={category}
+              />
+            </div>
+            <div className="col-md-10">
+              <SearchResultBoard
+                filteredList={filteredList}
+                style={searchResultBoardCSS}
+                searchKeywords={userSearchKeywords}
+              />
             </div>
           </div>
         </div>

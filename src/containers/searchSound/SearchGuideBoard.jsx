@@ -23,8 +23,8 @@ class SearchGuideBoard extends Component {
         category = this.props.category;
         
     return (
-      <div className="nav-tabs-left">
-        <h3>Search Guide</h3>
+      <div className="col-md-12">
+        <h3 style={{textAlign:"center"}}>Search Guide</h3>
         <hr />
         <h4>Genre</h4>
         <SearchGuideOptions

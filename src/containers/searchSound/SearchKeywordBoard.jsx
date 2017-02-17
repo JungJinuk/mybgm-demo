@@ -17,7 +17,7 @@ class SearchKeywordBoard extends Component {
     const h4Ment = "원하시는 검색어나 카테고리를 추가하세요",
     searchKeywordCards = this.props.searchKeywords.map((keyword, id) => {
       return (
-        <h4 key={id}>
+        <h4 key={id} className="my-keyword-board">
           <span className="label label-info">{keyword}{' '}
             <a onClick={this.handleKeywordDelete} className="my-remove-keyword">
               <span className="glyphicon glyphicon-remove" aria-hidden="true" title={id}/>
@@ -31,7 +31,7 @@ class SearchKeywordBoard extends Component {
       <div className="search-keyword">
         <div className="container">
           <div className="row">
-            {searchKeywordCards}<h4>{h4Ment}</h4>
+            {searchKeywordCards}<h4 className="my-keyword-board">{h4Ment}</h4>
           </div>
           <hr />
         </div>
