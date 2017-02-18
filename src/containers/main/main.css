@@ -4,15 +4,6 @@ body, html {
     line-height: 1.8;
 }
 
-
-.jumbotron {
-  margin-top: 50px;
-  height: 500px;
-  background-color: powderblue;
-  padding: 150px;
-  color: white;
-}
-
 .my-search-sound-page,.my-main-page,.my-regist-page {
   margin-top: 50px;
 }
@@ -49,4 +40,8 @@ body, html {
   text-align:center
 }
 
+.my-categoryboard {
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
 

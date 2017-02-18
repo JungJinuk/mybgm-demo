@@ -5,6 +5,7 @@ import SearchBoard from '../../components/searchBar/SearchBoard';
 import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
 import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
 import css from './main.css';
+import categoryboardCSS from '../../components/categoryBoard/categoryboard.css';
 
 class MainPage extends Component {
   render() {
@@ -12,8 +13,8 @@ class MainPage extends Component {
       <div className="my-main-page">
         <NaviBar/>
         <SearchBoard style={css}/>
-        <CategoryBoard />
         <BestSellerBoard/>
+        <CategoryBoard style={categoryboardCSS}/>
         <Footer/>
       </div>
     );
