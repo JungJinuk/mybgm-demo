@@ -15,6 +15,7 @@ class App extends Component {
         <Router history={hashHistory}>
           <Route path="/" component={Main} />
           <Route path="sound/search" component={SearchSound} />
+            <Route path="sound/search/:categoryName" component={SearchSound}/>
           <Route path="sound/detail" component={SoundDetail} />
           <Route path="regist" component={MusicRegistPage} />
         </Router>

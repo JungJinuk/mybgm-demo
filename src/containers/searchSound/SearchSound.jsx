@@ -180,6 +180,12 @@ class SearchSound extends Component {
     this.handleUserDelete = this.handleUserDelete.bind(this);
   }
 
+  componentDidMount() {
+    this.setState({
+      searchKeywords: this.state.searchKeywords.concat((this.props.params.categoryName))
+    })
+  }
+
   handleUserDelete(clickedKeywordIndex) {
     this.setState((prevState) => {
       var updateKeywords = prevState.searchKeywords;

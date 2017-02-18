@@ -1,10 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 
 class CategoryTabContent extends Component {
   render() {
+    var categoryElement = this.props.element;
     return (
       <div className="col-md-2 my-category-elements">
-        <h4 className="my-category-element-h4">{this.props.element}</h4>
+        <Link to={`sound/search/${categoryElement}`}>
+          <h4 className="my-category-element-h4">{categoryElement}</h4></Link>
       </div>
     );
   }

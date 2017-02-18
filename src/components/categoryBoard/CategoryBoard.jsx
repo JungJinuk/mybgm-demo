@@ -20,10 +20,10 @@ class CategoryBoard extends Component {
       selectedIndex: 0
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.handleTabClick = this.handleTabClick.bind(this);
   }
 
-  handleClick(selectedIndex) {
+  handleTabClick(selectedIndex) {
     this.setState({
       selectedIndex: selectedIndex
     });
@@ -37,7 +37,7 @@ class CategoryBoard extends Component {
       return (
         <CategoryTab
           selected={selectedIndex}
-          onClick={() => this.handleClick(index)}
+          onClick={() => this.handleTabClick(index)}
           category={category}
           id={index}
           key={index} />
