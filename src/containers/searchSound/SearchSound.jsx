@@ -15,146 +15,242 @@ import searchGuideBoardCSS from './search-guidboard.css';
 let musicDataSamples = [
   {
     Artist: {
-      Name: 'Imagine Dragons',
+      Name: 'KnockingHeaven',
     },
     Music: {
-      Song: '/data/musics/Imagin Dragons-Amsterdam.mp3',
-      Title: 'Amsterdam',
+      Song: '/data/musics/Bright_Acoustic_Guitar.mp3',
+      Title: 'Happy Guitar',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 20,
-      Genre: ['Pop'],
-      Mood: ['Happy', 'Energetic'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Trip']
+      Genre: ['어쿠스틱'],
+      Mood: ['BRIGHT'],
+      Instrument: ['기타'],
+      Keyword: ['Happy','Guitar']
     }
   },
   {
     Artist: {
-      Name: 'Linkin Park',
+      Name: 'Gutarking',
     },
     Music: {
-      Song: '/data/musics/Linkin Park-Faint.mp3',
-      Title: 'Faint',
+      Song: '/data/musics/Bright_Easylistening_Guitar.mp3',
+      Title: 'My Birthday',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 12,
-      Genre: ['Pop', 'Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Powerful']
+      Genre: ['이지리스닝'],
+      Mood: ['BRIGHT'],
+      Instrument: ['기타'],
+      Keyword: ['Happy', 'Guitar']
     }
   },
   {
     Artist: {
-      Name: 'Twenty One Pilots',
+      Name: 'Hainz',
     },
     Music: {
-      Song: '/data/musics/Twenty one pilots - Car Radio.mp3',
-      Title: 'Car Radio',
+      Song: '/data/musics/easylistening_Emotional_Guitar.mp3',
+      Title: 'Morning Sunshine',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 200,
-      Genre: ['Pop'],
-      Mood: ['Sad'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Sea']
+      Genre: ['이지리스닝'],
+      Mood: ['EMOTIONAL'],
+      Instrument: ['기타'],
+      Keyword: ['Sunshine', 'Morning']
     }
   },
   {
     Artist: {
-      Name: 'Rise Against',
+      Name: 'Yeonjunjo',
     },
     Music: {
-      Song: '/data/musics/Rise Against - Prayer Of The Refugee.mp3',
-      Title: 'Prayer Of The Refugee',
+      Song: '/data/musics/Emotional_Acoustic_Guitar.mp3',
+      Title: 'Fall Busking',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 15,
-      Genre: ['Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Power']
+      Genre: ['어쿠스틱'],
+      Mood: ['EMOTIONAL'],
+      Instrument: ['기타'],
+      Keyword: ['Fall', 'Guitar', 'Lonely']
     }
   },
   {
     Artist: {
-      Name: 'The Killers',
+      Name: 'Yeonjunjo',
     },
     Music: {
-      Song: '/data/musics/The Killers - Mr.Brightside.mp3',
-      Title: 'Mr.Brightside',
+      Song: '/data/musics/Emotional_Acoustic_Guitar2.mp3',
+      Title: 'Reminisce',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 30,
-      Genre: ['Pop', 'Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Miss']
+      Genre: ['어쿠스틱'],
+      Mood: ['EMOTIONAL'],
+      Instrument: ['기타'],
+      Keyword: ['Fall', 'Guitar', 'Holiday']
     }
   },
   {
     Artist: {
-      Name: 'Evanescence',
+      Name: 'Tuk',
     },
     Music: {
-      Song: '/data/musics/Evanescence - Bring Me To Life.mp3',
-      Title: 'Bring Me To Life',
+      Song: '/data/musics/Energetic_Easylistening_Brass.mp3',
+      Title: 'Pirate Go To SEA',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 90,
-      Genre: ['Rock'],
-      Mood: ['Sad'],
-      Instrument: ['Popular'],
-      Keyword: ['Miss']
+      Genre: ['이지리스닝'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['관악기'],
+      Keyword: ['Pirate', 'Powerful']
     }
   },
   {
     Artist: {
-      Name: 'Foo Fighters',
+      Name: 'Tuk',
     },
     Music: {
-      Song: '/data/musics/Foo Fighters - The Pretender.mp3',
-      Title: 'The Pretender',
+      Song: '/data/musics/Energetic_Jazz_Keyboards.mp3',
+      Title: 'Western Pub',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 99,
-      Genre: ['Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Powerful']
+      Genre: ['재즈'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['키보드'],
+      Keyword: ['Pub', 'Jazz']
     }
   },
   {
     Artist: {
-      Name: 'Fall Out Boy',
+      Name: 'LETSGO',
     },
     Music: {
-      Song: '/data/musics/Fall Out Boy - Centuries.mp3',
-      Title: 'Centuries',
+      Song: '/data/musics/Energetic_Rock_Guitar.mp3',
+      Title: 'The way to travel',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 12,
-      Genre: ['Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Powerful']
+      Genre: ['락'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['기타'],
+      Keyword: ['Travel', 'Car']
     }
   },
   {
     Artist: {
-      Name: 'Linkin Park',
+      Name: 'LETSGO',
     },
     Music: {
-      Song: '/data/musics/Linkin Park - Somewhere I Belong.mp3',
-      Title: 'Somewhere I Belong',
+      Song: '/data/musics/Energetic_Soul_Brass.mp3',
+      Title: 'Village Festival',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 32,
-      Genre: ['Pop', 'Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Mistery']
+      Genre: ['소울'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['관악기'],
+      Keyword: ['Festival', 'Jazz']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Cobra',
+    },
+    Music: {
+      Song: '/data/musics/Fantasy_Worldmusic_String.mp3',
+      Title: 'Egyptian street',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['월드뮤직'],
+      Mood: ['FANTASY'],
+      Instrument: ['스트링'],
+      Keyword: ['Egypt', 'Snake']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Cobra',
+    },
+    Music: {
+      Song: '/data/musics/Fantasy_worldmusic_voice.mp3',
+      Title: 'Civilization',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['월드뮤직'],
+      Mood: ['FANTASY'],
+      Instrument: ['보이스'],
+      Keyword: ['Civilization', 'World']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Third Steps from the Hell',
+    },
+    Music: {
+      Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR.mp3',
+      Title: 'Just before the War',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['MAGNIFICIENT'],
+      Instrument: ['보이스'],
+      Keyword: ['War', 'Tension']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Third Steps from the Hell',
+    },
+    Music: {
+      Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR2.mp3',
+      Title: 'Chaser',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['MAGNIFICIENT'],
+      Instrument: ['보이스'],
+      Keyword: ['Chase', 'Tension']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Child',
+    },
+    Music: {
+      Song: '/data/musics/Tension_Crossover_String.mp3',
+      Title: 'Haunted house',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['TENSION'],
+      Instrument: ['스트링'],
+      Keyword: ['Ghost', 'Fear']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Bertycox',
+    },
+    Music: {
+      Song: '/data/musics/BertycoX - The Signal.mp3',
+      Title: 'The signal',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['일렉트로닉'],
+      Mood: ['ENERGETIC', 'DANCY'],
+      Instrument: ['신스'],
+      Keyword: ['God', 'Good']
     }
   },
 ];
