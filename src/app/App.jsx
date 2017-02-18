@@ -4,7 +4,6 @@ import SoundDetail from '../containers/soundDetail/SoundDetail';
 import SearchSound from '../containers/searchSound/SearchSound';
 import MusicRegistPage from '../containers/musicRegist/MusicRegistPage';
 
-import navcss from '../components/categoryBoard/CategoryNav.css';
 import footcss from '../containers/main/footer.css';
 
 import {Router, Route, hashHistory} from 'react-router';

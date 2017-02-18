@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+
 import NaviBar from '../../components/NaviBar/NaviBar';
 import Footer from '../../components/Footer/Footer';
 import ArtistInfo from './ArtistInfo';

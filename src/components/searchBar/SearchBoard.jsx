@@ -4,12 +4,6 @@ import { Link } from 'react-router';
 class MainSearchBoard extends Component {
   constructor(props) {
     super(props);
-
-    this.onClickSearchBar = this.onClickSearchBar.bind(this);
-  }
-
-  onClickSearchBar() {
-
   }
 
   render() {
