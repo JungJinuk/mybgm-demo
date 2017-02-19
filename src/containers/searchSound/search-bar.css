@@ -1,7 +1,9 @@
 .search-input {
-  background-color: slategray;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/happy.jpg");
+  padding-top: 327px;
+  height: 500px;
 }
 
 

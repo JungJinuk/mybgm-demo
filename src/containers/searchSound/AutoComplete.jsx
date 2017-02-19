@@ -7,16 +7,15 @@ class AutoComplete extends Component {
     this.handleUserAutoCompleteClick = this.handleUserAutoCompleteClick.bind(this);
   }
 
-  handleUserAutoCompleteClick(e) {
-    this.props.resetInputText(e.target.title);
+  handleUserAutoCompleteClick(keyword) {
+    this.props.resetInputText(keyword);
   }
   
   render() {
     const autoCompleteList = this.props.autoCompleteArray.map((keyword, index) => {
       return (
         <a
-          title={keyword}
-          onClick={this.handleUserAutoCompleteClick}
+          onClick={() => this.handleUserAutoCompleteClick(keyword)}
           key={index}
           className="list-group-item"
         >{keyword}</a>

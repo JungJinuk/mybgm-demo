@@ -1,18 +1,47 @@
-.main {
-  background-color: blanchedalmond;
-  width: 100%;
-  height: 200px;
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
 }
 
-.search {
-  width: 90%;
-  height: 30px;
+.my-search-sound-page,.my-main-page,.my-regist-page {
+  margin-top: 50px;
 }
 
-.jumbotron {
+.main-input {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/images/background.jpg");
+  padding-top: 327px;
   height: 500px;
-  background-color: powderblue;
-  padding-top: 150px;
-  padding-bottom: 100px;
-  color: white;
 }
+
+.my-display-middle {
+  position:absolute;
+  top:25%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);   
+}
+
+.my-text-white{
+  color:#fff!important
+}
+
+.my-text-gray{
+  color: dimgray;
+}
+
+.my-jumbo{
+  font-size:64px!important
+}
+
+.my-center{
+  text-align:center
+}
+
+.my-categoryboard {
+  margin-top: 80px;
+  margin-bottom: 150px;
+}
+

@@ -1,12 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import SearchGuideOptions from './SearchGuideOptions';
 
-let category = {
-  Genre: ['pop', 'rock', 'electronic'],
-  Moods: ['happy', 'energetic', 'sad'],
-  Instrument: ['popular', 'electronic', 'wind']
-};
-
 class SearchGuideBoard extends Component {
   constructor(props) {
     super(props);
@@ -25,11 +19,12 @@ class SearchGuideBoard extends Component {
 
   render() {
     var handleOptionClick = this.handleOptionClick,
-        searchKeywords = this.props.searchKeywords;
+        searchKeywords = this.props.searchKeywords,
+        category = this.props.category;
         
     return (
-      <div className="nav-tabs-left">
-        <h3>Search Guide</h3>
+      <div className="col-md-12">
+        <h3 style={{textAlign:"center"}}>Search Guide</h3>
         <hr />
         <h4>Genre</h4>
         <SearchGuideOptions
@@ -59,7 +54,8 @@ class SearchGuideBoard extends Component {
 SearchGuideBoard.propTypes = {
   onUserInput: PropTypes.func,
   onUserDelete: PropTypes.func,
-  searchKeywords: PropTypes.arrayOf(PropTypes.string)
+  searchKeywords: PropTypes.arrayOf(PropTypes.string),
+  category: PropTypes.object
 };
 
 export default SearchGuideBoard;

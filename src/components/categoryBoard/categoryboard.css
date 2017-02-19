@@ -1,0 +1,17 @@
+.my-category-elements {
+  margin-bottom: 40px;
+  text-align: center;
+  color: darkgray;
+}
+.my-category-element-h4 {
+  color: darkgray;
+}
+
+.my-category-element-h4:hover {
+  color: #5bc0de;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+}

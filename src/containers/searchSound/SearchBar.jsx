@@ -21,6 +21,7 @@ class SearchBar extends Component {
   }
 
   handleChange(e) {
+    console.log("handleChange");
     this.setState({
       searchText: e.target.value,
       autoCompleteList: e.target.value ? this.autoComplete() : []
@@ -63,13 +64,18 @@ class SearchBar extends Component {
     });
 
     uniqKeywords = [...new Set(combinedKeyword)].map((keyword) => keyword.toLowerCase()).sort();
+    
     return uniqKeywords.filter((keyword) => { return keyword.indexOf(this.state.searchText) > -1; });
   }
 
   render() {
+    const searchMent = "원하는 음악을 쉽게 검색하세요"
     return (
       <div className="search-input">
         <div className="container">
+          <div className="my-display-middle my-text-gray my-center">
+            <h3>{searchMent}</h3>
+          </div>
           <div className="row">
             <form onSubmit={this.handleSubmit}>
               <div className="input-group">
