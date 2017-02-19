@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import { Modal } from 'react-bootstrap';
 
 import SignInModal from '../../containers/modal/SignInModal';
-
 import LogInModal from '../../containers/modal/LogInModal';
 
 class NaviBar extends Component {
