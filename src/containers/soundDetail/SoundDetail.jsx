@@ -28,6 +28,14 @@ const bestSeller = {
 };
 
 class SoundDetail extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      playing: false
+    };
+  }
+
   render() {
     return (
       <div>
