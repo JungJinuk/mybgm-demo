@@ -20,12 +20,12 @@ class SearchBar extends Component {
     this.userInput.focus();
   }
 
-  handleChange(e) {
-    console.log("handleChange");
+  handleChange() {
     this.setState({
-      searchText: e.target.value,
-      autoCompleteList: e.target.value ? this.autoComplete() : []
+      searchText: this.userInput.value,
+      autoCompleteList: this.userInput.value ? this.autoComplete() : []
     });
+    console.log(this.state.searchText);
   }
 
   resetInputText(searchText) {
@@ -65,7 +65,7 @@ class SearchBar extends Component {
 
     uniqKeywords = [...new Set(combinedKeyword)].map((keyword) => keyword.toLowerCase()).sort();
     
-    return uniqKeywords.filter((keyword) => { return keyword.indexOf(this.state.searchText) > -1; });
+    return uniqKeywords.filter((keyword) => { return keyword.indexOf(this.state.searchText.toLowerCase()) > -1; });
   }
 
   render() {

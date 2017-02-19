@@ -269,17 +269,11 @@ class SearchSound extends Component {
     super(props);
 
     this.state = {
-      searchKeywords: []
+      searchKeywords: [].concat((this.props.params.categoryName))
     }
 
     this.handleUserInput = this.handleUserInput.bind(this);
     this.handleUserDelete = this.handleUserDelete.bind(this);
-  }
-
-  componentDidMount() {
-    this.setState({
-      searchKeywords: this.state.searchKeywords.concat((this.props.params.categoryName))
-    })
   }
 
   handleUserDelete(clickedKeywordIndex) {
@@ -334,8 +328,11 @@ class SearchSound extends Component {
   }
 
   render() {
+
     var userSearchKeywords = this.state.searchKeywords,
-      filteredList = this.filterKeyword(userSearchKeywords);
+      filteredList = this.filterKeyword(userSearchKeywords),
+      lowerCaseUserKeywords = userSearchKeywords.map((i) => i.toLowerCase());
+
 
     return (
       <div className="my-search-sound-page">
@@ -345,7 +342,7 @@ class SearchSound extends Component {
           onUserInput={this.handleUserInput}
           category={category}
           musicData={musicDataSamples}
-          searchKeywords={userSearchKeywords}
+          searchKeywords={lowerCaseUserKeywords}
         />
         <SearchKeywordBoard
           style={searchKeywordBoardCSS}
@@ -359,7 +356,7 @@ class SearchSound extends Component {
                 style={searchGuideBoardCSS}
                 onUserInput={this.handleUserInput}
                 onUserDelete={this.handleUserDelete}
-                searchKeywords={userSearchKeywords}
+                searchKeywords={lowerCaseUserKeywords}
                 category={category}
               />
             </div>
@@ -367,7 +364,7 @@ class SearchSound extends Component {
               <SearchResultBoard
                 filteredList={filteredList}
                 style={searchResultBoardCSS}
-                searchKeywords={userSearchKeywords}
+                searchKeywords={lowerCaseUserKeywords}
               />
             </div>
           </div>
