@@ -37,12 +37,12 @@ class MusicElement extends Component {
           <li className="BestSeller">
             <img className="play" src={!this.state.playing ? "/data/images/etc/play-button.png" : "/data/images/etc/pause-button.png"}
               onClick={this.handleTogglePlay} />
-            <div className="detail"><p><b>{MusicElement.Title}</b></p>
-              <p>{this.props.music.Artist.Name}</p></div>
+            <div className="detail"><p className="musictitlefont"><b>{MusicElement.Title}</b></p>
+              <p className="musicfont">{this.props.music.Artist.Name}</p></div>
             <WaveController song={MusicElement.Song} playing={this.state.playing} />
           </li>
         </ul>
-        <div className="col-md-4">
+        <div className="col-md-4 etcarrange">
           <p>{MusicElement.Price}{"Won"}<span className="glyphicon glyphicon-heart">{MusicElement.Likes}</span></p>
         </div>
       </div>
