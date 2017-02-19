@@ -9,9 +9,9 @@
 
 .my-category-element-h4:hover {
   color: #5bc0de;
-  cursor: pointer;
 }
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
