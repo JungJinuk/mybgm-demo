@@ -13,7 +13,7 @@ class MainSearchBoard extends Component {
       <div className="main-input">
         <div className="container">
           <div className="my-display-middle my-text-white my-center">
-            <h1 className="my-jumbo">저작권 무료 배경음악</h1><br/>
+            <h1 className="my-jumbo">저작권 무료 배경음악</h1><br />
             <h3>{mainMent}</h3>
           </div>
           <div className="row">

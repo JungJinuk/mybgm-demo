@@ -119,6 +119,7 @@ class BestSellerBoard extends Component {
         <ul>
           {bestSellerDetail}
         </ul>
+        
       </div>
     );
   }

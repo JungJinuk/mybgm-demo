@@ -23,6 +23,7 @@ class MainPage extends Component {
       <div className="my-main-page">
         <NaviBar/>
         <SearchBoard style={css}/>
+        <hr/>
         <BestSellerBoard/>
         <CategoryBoard style={categoryboardCSS}/>
         <Footer/>
