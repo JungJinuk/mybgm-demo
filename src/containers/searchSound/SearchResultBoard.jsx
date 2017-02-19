@@ -23,7 +23,8 @@ class SearchResultBoard extends Component {
 }
 
 SearchResultBoard.propTypes = {
-  filteredList: PropTypes.arrayOf(PropTypes.object)
+  filteredList: PropTypes.arrayOf(PropTypes.object),
+  searchKeywords: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default SearchResultBoard;
