@@ -16,6 +16,11 @@ class RegistForm extends Component {
     this.optionList = this.optionList.bind(this);
   }
 
+  onRegistSubmit(e) {
+    e.preventDefault();
+    alert("제출이 완료되었습니다. 심사과정을 거친 후 음원이 등록됩니다.");
+  }
+
   optionList(categoryName) {
     var i, categoryOptionForm = [];
     var optionLists = categoryName.map((category) => {
@@ -46,7 +51,7 @@ class RegistForm extends Component {
       " 이에 대한 모든 책임은 음원을 직접 업로드한 본인에게 있으면 저희 마이비지엠에서는 이에 대한 일체의 책임을 지지 않습니다.";
 
     return (
-      <form className="form-horizontal">
+      <form className="form-horizontal" onSubmit={this.onRegistSubmit}>
         <div className="form-group">
           <label for="trackName" className="col-md-2 control-label">트랙이름</label>
           <div className="col-md-10">

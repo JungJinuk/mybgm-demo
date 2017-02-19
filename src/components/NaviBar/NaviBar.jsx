@@ -5,6 +5,8 @@ import { Modal } from 'react-bootstrap';
 import SignInModal from '../../containers/modal/SignInModal';
 import LogInModal from '../../containers/modal/LogInModal';
 
+import modalstyleCSS from '../../containers/modal/modalstyle.css';
+
 class NaviBar extends Component {
   constructor(props) {
     super(props);
@@ -52,8 +54,8 @@ class NaviBar extends Component {
           </div>
         </nav>
 
-        <SignInModal isShow={this.state.showSigninModal} toggleClick={this.toggleSigninModal} />
-        <LogInModal isShow={this.state.showLoginModal} toggleClick={this.toggleLoginModal} />
+        <SignInModal style={modalstyleCSS} isShow={this.state.showSigninModal} toggleClick={this.toggleSigninModal} />
+        <LogInModal style={modalstyleCSS} isShow={this.state.showLoginModal} toggleClick={this.toggleLoginModal} />
       </div>
     );
   }
