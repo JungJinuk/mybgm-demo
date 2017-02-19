@@ -3,6 +3,7 @@ import NaviBar from '../../components/NaviBar/NaviBar';
 import Footer from '../../components/Footer/Footer';
 import PurchaseBoard from '../../components/purchaseBoard/PurchaseBoard';
 import MusicElement from '../../containers/searchSound/MusicElement';
+import WaveController from '../../components/bestSellerBoard/WaveController';
 import SoundDetailInfo from '../../components/soundDetailInfo/SoundDetailInfo';
 import AuthorPorfile from '../../components/authorProfile/AuthorProfile';
 import Media from '../../components/media/MediaList';
@@ -33,10 +34,7 @@ class SoundDetail extends Component {
         <NaviBar/>
         <div className="row nav-top-margin">
           <div className="col-md-8">
-            <MusicElement
-              music={bestSeller}
-              style={MusicListCSS}
-            />
+            <WaveController song={bestSeller.Music.Song} playing={this.state.playing} />
             <SoundDetailInfo/>
           </div>
           <div className="col-md-4">
