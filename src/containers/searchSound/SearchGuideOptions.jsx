@@ -14,7 +14,8 @@ class SearchGuideOptions extends Component {
   render() {
     var btnState = "",
      categoryList = this.props.categoryName.map((element, index) => {
-      if (this.props.searchKeywords.includes(element.toLowerCase())) {
+       var lowerCaseElement = element.toLowerCase();
+      if (this.props.searchKeywords.includes(lowerCaseElement)) {
         btnState = "btn btn-sm btn-info"
       } else {
         btnState = "btn btn-sm btn-default"
@@ -23,7 +24,7 @@ class SearchGuideOptions extends Component {
       return (
         <button
           key={index}
-          onClick={() => this.handleCategoryClick(element)}
+          onClick={() => this.handleCategoryClick(lowerCaseElement)}
           className={btnState}>{element}</button>
       );
     });
