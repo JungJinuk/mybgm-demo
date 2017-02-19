@@ -115,11 +115,8 @@ class BestSellerBoard extends Component {
     });
 
     return (
-      <div>
-        <ul>
+      <div className="container">
           {bestSellerDetail}
-        </ul>
-        
       </div>
     );
   }

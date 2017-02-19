@@ -6,10 +6,11 @@
   height: 50px;
     }
 .cover{
-  float : left;
-  width :50px;
-  height: 50px;
+  float : right;
+  width :80px;
+  height: 80px;
   display : block;
+  
 }
 .wave{
   width :200px;
@@ -27,7 +28,7 @@ li{
 .play{
   float: left;
   display: block;
-  height: 50px;
+  height: 30px;
 }
 .song{
   background-color: red;
