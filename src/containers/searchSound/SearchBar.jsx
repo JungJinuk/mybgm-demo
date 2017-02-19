@@ -25,7 +25,6 @@ class SearchBar extends Component {
       searchText: this.userInput.value,
       autoCompleteList: this.userInput.value ? this.autoComplete() : []
     });
-    console.log(this.state.searchText);
   }
 
   resetInputText(searchText) {

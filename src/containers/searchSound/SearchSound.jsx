@@ -26,7 +26,7 @@ let musicDataSamples = [
       Genre: ['어쿠스틱'],
       Mood: ['BRIGHT'],
       Instrument: ['기타'],
-      Keyword: ['Happy','Guitar']
+      Keyword: ['Happy', 'Guitar']
     }
   },
   {
@@ -268,8 +268,15 @@ class SearchSound extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      searchKeywords: [].concat((this.props.params.categoryName))
+    var categoryNameParameter = this.props.params.categoryName;
+    if (categoryNameParameter === undefined || categoryNameParameter === null) {
+      this.state = {
+        searchKeywords: []
+      }
+    } else {
+      this.state = {
+        searchKeywords: [].concat((this.props.params.categoryName))
+      }
     }
 
     this.handleUserInput = this.handleUserInput.bind(this);
@@ -328,7 +335,6 @@ class SearchSound extends Component {
   }
 
   render() {
-
     var userSearchKeywords = this.state.searchKeywords,
       filteredList = this.filterKeyword(userSearchKeywords),
       lowerCaseUserKeywords = userSearchKeywords.map((i) => i.toLowerCase());
