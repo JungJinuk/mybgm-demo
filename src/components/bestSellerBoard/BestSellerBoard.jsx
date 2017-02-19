@@ -27,7 +27,7 @@ let bestSellerDataSamples = [
       Song: '/data/musics/Energetic_Soul_Brass.mp3',
       Title: 'Village Festival',
       Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
+      Image: '/data/images/cover/Counting Stars.png',
       Likes: 32,
       Genre: ['소울'],
       Mood: ['ENERGETIC'],
@@ -43,7 +43,7 @@ let bestSellerDataSamples = [
       Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR.mp3',
       Title: 'Just before the War',
       Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
+      Image: '/data/images/cover/Maps.png',
       Likes: 32,
       Genre: ['크로스오버'],
       Mood: ['MAGNIFICIENT'],
@@ -59,7 +59,7 @@ let bestSellerDataSamples = [
       Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR2.mp3',
       Title: 'Chaser',
       Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
+      Image: '/data/images/cover/Ai Se Eu Te Pego.png',
       Likes: 32,
       Genre: ['크로스오버'],
       Mood: ['MAGNIFICIENT'],
@@ -75,7 +75,7 @@ let bestSellerDataSamples = [
       Song: '/data/musics/Tension_Crossover_String.mp3',
       Title: 'Haunted house',
       Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
+      Image: '/images/media/me_8.jpg',
       Likes: 32,
       Genre: ['크로스오버'],
       Mood: ['TENSION'],
@@ -91,7 +91,7 @@ let bestSellerDataSamples = [
       Song: '/data/musics/BertycoX - The Signal.mp3',
       Title: 'The signal',
       Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
+      Image: '/images/media/me_9.jpg',
       Likes: 32,
       Genre: ['일렉트로닉'],
       Mood: ['ENERGETIC', 'DANCY'],
@@ -116,7 +116,9 @@ class BestSellerBoard extends Component {
 
     return (
       <div className="container">
-          {bestSellerDetail}
+      <h2>Best Sellers <span className="glyphicon glyphicon-star"></span></h2>
+      <hr />
+        {bestSellerDetail}
       </div>
     );
   }

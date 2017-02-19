@@ -3,7 +3,7 @@ import Wavesurfer from '../../../lib/react-wavesurfer';
 
 const opt={
   height:50,
-  width:500,
+  width:200,
   // fillParent: true,
   minPxPerSec: 5,
   normalize: true,
