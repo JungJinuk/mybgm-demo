@@ -2,3 +2,32 @@
     max-height: 100px;
     max-width: 100px;
 }
+
+.author-name {
+    font-size: large;
+    font-weight: bold;
+}
+
+.author-badge {
+    display: block;
+}
+
+.author-badge img {
+    padding: 10px;
+    max-height: 50px;
+    max-width: 50px;
+}
+
+.author-album {
+    display: block;
+}
+
+.author-album img {
+    max-height: 75px;
+    max-width: 75px;
+    margin-bottom: 5px;
+}
+
+.keyword button{
+    margin: 5px;
+}

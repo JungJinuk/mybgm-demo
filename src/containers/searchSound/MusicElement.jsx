@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import WaveController from '../../components/bestSellerBoard/WaveController';
+import { Link } from 'react-router';
 
 class MusicElement extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class MusicElement extends Component {
 
     this.state = {
       playing: false
-    }
+    };
 
     this.handleTogglePlay = this.handleTogglePlay.bind(this);
   }
@@ -25,7 +26,9 @@ class MusicElement extends Component {
       <li className="BestSeller">
         <img className="play" src={!this.state.playing ? "/data/images/etc/play-button.png" : "/data/images/etc/pause-button.png"}
           onClick={this.handleTogglePlay} />
-        <img className="cover" src={MusicElement.Image} />
+        <Link to="/sound/detail">
+          <img className="cover" src={MusicElement.Image} />
+        </Link>
         <div className="detail"><p><b>{MusicElement.Title}</b></p>
           <p>{this.props.music.Artist.Name}</p></div>
         <WaveController song={MusicElement.Song} playing={this.state.playing} />

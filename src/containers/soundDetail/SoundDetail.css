@@ -1,0 +1,41 @@
+.nav-top-margin {
+    margin-top: 60px;
+}
+
+.padding-5 {
+    padding: 5px;
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.margin-top-5 {
+    margin-top: 5px;
+}
+
+.box-boarder {
+    margin: 20px 10px 20px 10px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #5bc0de;
+    border-width: 1px;
+}
+
+.icon {
+    font-size: xx-large;
+    margin-left: 30px;
+}
+
+.icon-heart {
+    color: red;
+}
+
