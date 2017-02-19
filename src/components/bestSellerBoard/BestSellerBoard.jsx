@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import MusicListCSS from './musicList.css';
+import MusicListCSS from '../../containers/searchSound/musicElement.css';
 import MusicElement from '../../containers/searchSound/MusicElement';
 
 let bestSellerDataSamples = [

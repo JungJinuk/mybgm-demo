@@ -8,7 +8,7 @@ import SoundDetailInfo from '../../components/soundDetailInfo/SoundDetailInfo';
 import AuthorPorfile from '../../components/authorProfile/AuthorProfile';
 import Media from '../../components/media/MediaList';
 import SoundDetailCSS from './SoundDetail.css';
-import MusicListCSS from '../../components/bestSellerBoard/musicList.css';
+import MusicListCSS from '../searchSound/musicElement.css';
 
 
 //test

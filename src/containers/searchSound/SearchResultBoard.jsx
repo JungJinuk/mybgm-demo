@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import MusicElement from './MusicElement';
-import MusicListCSS from '../../components/bestSellerBoard/musicList.css';
+import MusicListCSS from '../searchSound/musicElement.css';
 
 class SearchResultBoard extends Component {
 
