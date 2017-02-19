@@ -1,0 +1,91 @@
+.margin{
+  margin-bottom: 30px;
+}
+
+.musicLargefont {
+  font-size: 16px;
+}
+
+.musicLargefont.price {
+  float: right;
+  margin-right: 20px;
+  margin-top: 7px;
+}
+
+.musicMiddlefont{
+  font-size: 13px;
+}
+
+.musicSmallfont{
+  font-size: 11px;
+}
+
+.musicSmallfont.keyword {
+  position: absolute;
+  float: right;
+  margin-right: 0px;
+  margin-top: 60px;
+}
+
+.musicSmallfont.likes {
+  cursor: pointer;
+}
+
+.musicSmallfont.likes:hover {
+  color: palevioletred;
+  transform: scale(1.1);
+}
+
+.won-Image {
+  width: 26px;
+  height: 26px;
+}
+
+.detail{
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 5px;
+  float : left;
+  height: 50px;
+}
+.cover{
+  float : left;
+  width :80px;
+  height: 80px;
+  display : block;
+  
+}
+.wave{
+  width :200px;
+  height: 50px;
+  display : block;
+}
+
+li{
+  list-style-type: none;
+}
+.BestSeller{
+  display: block;
+  width: 430px;
+  margin: auto;
+}
+.play {
+  float: left;
+  display: block;
+  height: 30px;
+}
+
+.play:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.song{
+  background-color: red;
+  display:block;
+}
+
+.wave-padding {
+  padding-top: 18px;
+  padding-left: 230px;
+}

@@ -3,7 +3,7 @@ import WaveController from '../../components/bestSellerBoard/WaveController';
 import { Link } from 'react-router';
 
 //munjo test css
-import Margin from './margin.css'
+import musicElementCSS from './musicElement.css'
 
 
 class MusicElement extends Component {
