@@ -3,13 +3,15 @@ import Wavesurfer from '../../../lib/react-wavesurfer';
 
 const opt={
   height:50,
-  width:200
-}
+  width:500,
+  // fillParent: true,
+  minPxPerSec: 5
+};
 
 class WaveController extends Component {
   render() {
     return (
-      <div>
+      <div className="wave-padding">
         <Wavesurfer
           audioFile={this.props.song}
           playing={this.props.playing}

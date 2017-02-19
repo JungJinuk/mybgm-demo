@@ -32,5 +32,12 @@ li{
 .song{
   background-color: red;
   display:block;
-  
+}
+
+.wave-padding {
+  padding-left: 230px;
+}
+
+wave {
+  width: 100%;
 }

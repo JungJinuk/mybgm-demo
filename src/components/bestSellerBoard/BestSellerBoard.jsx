@@ -8,7 +8,7 @@ let bestSellerDataSamples = [
       Name: 'Imagine Dragons',
     },
     Music: {
-      Song: '/data/musics/Imagin Dragons-Amsterdam.mp3',
+      Song: '/data/musics/Bright_Acoustic_guitar.mp3',
       Title: 'Amsterdam',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
@@ -24,7 +24,7 @@ let bestSellerDataSamples = [
       Name: 'Linkin Park',
     },
     Music: {
-      Song: '/data/musics/Linkin Park-Faint.mp3',
+      Song: '/data/musics/Bright_Easylistening_Guitar.mp3',
       Title: 'Faint',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
@@ -40,7 +40,7 @@ let bestSellerDataSamples = [
       Name: 'Twenty One Pilots',
     },
     Music: {
-      Song: '/data/musics/Twenty one pilots - Car Radio.mp3',
+      Song: '/data/musics/easylistening_Emotional_Guitar.mp3',
       Title: 'Car Radio',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',

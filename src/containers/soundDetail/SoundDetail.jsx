@@ -2,11 +2,11 @@ import React, { Component, PropTypes } from 'react';
 import NaviBar from '../../components/NaviBar/NaviBar';
 import Footer from '../../components/Footer/Footer';
 import PurchaseBoard from '../../components/purchaseBoard/PurchaseBoard';
-import BestSeller from '../../components/bestSellerBoard/BestSeller';
+import BestSeller from '../../components/bestSellerBoard/WaveController';
 import SoundDetailInfo from '../../components/soundDetailInfo/SoundDetailInfo';
 import AuthorPorfile from '../../components/authorProfile/AuthorProfile';
 import Media from '../../components/media/MediaList';
-import BestSellerCSS from '../../components/bestSellerBoard/bestSeller.css';
+import BestSellerCSS from '../../components/bestSellerBoard/musicList.css';
 
 const bestSeller = { Title: 'City Of Stars', Artist: 'Ryan Gosling', Path: '/data/images/cover/City Of Stars.png',
     Wave: '/data/images/wave/City Of Stars_wave.png', Price: '1900', Song:'/data/musics/Imagine Dragons.mp3' };

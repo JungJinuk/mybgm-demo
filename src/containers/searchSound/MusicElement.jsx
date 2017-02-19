@@ -1,7 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import WaveController from '../../components/bestSellerBoard/WaveController';
 
-
 class MusicElement extends Component {
   constructor(props) {
     super(props);

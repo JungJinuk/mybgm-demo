@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';
-import BestSeller from '../bestSellerBoard/BestSeller';
 
 let licenses = [
   {name: "표준종합 라이센스", val: 1, price: 2000},
