@@ -1,0 +1,125 @@
+.my-modal-login-cover-photo {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/modal/login-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.my-modal-signin-cover-photo {
+  width: 100%;
+  height: 300px;
+  background-image: url("/images/modal/signin-photo.jpg");
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 1px solid #e1e1e1;
+} 
+
+.fb-login {
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+  background-color: #5667af;
+  transition: 0.4s; 
+}
+
+.fb-login:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.body {
+  padding: 16px 36px;
+}
+
+.or-divider {
+  position: relative;
+  margin: 26px 0px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 100%;
+  height: 0px;
+  border: 1px solid #eeeeee;
+}
+
+.or-divider span {
+  color: #7f7f7f;
+  position: relative;
+  top: -12px;
+  background-color: white;
+  padding: 0 8px;
+  left: 50%;
+  margin-left: -16px;
+}
+
+.login-form input {
+  margin-bottom: 20px;
+}
+
+.forgot-pw {
+    font-size: 14px;
+    line-height: 32px;
+    color: #666;
+    float: left;
+}
+
+.login-form-submit {
+  float: right;
+  outline: 0;
+  width: 180px;
+  height: 32px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 0;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.signin-form-submit {
+  outline: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #1e1e1e;
+  color: white;
+  border: 0;
+  font-weight: 600;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+
+.login-form-submit:hover {
+  opacity: 0.8;
+  transition: 0.4s;
+}
+
+.right {
+  float: right;
+}
+
+.modal-footer {
+  margin-top: 30px;
+  background-color: #f7f7f7;
+  height: 46px;
+  width: 100%;
+  border-top: 1px solid #e1e1e1;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 46px;
+  padding: 0 36px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.modal-footer a {
+  color: #666;
+  font-weight: 600;   
+}

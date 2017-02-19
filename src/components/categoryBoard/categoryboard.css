@@ -11,7 +11,11 @@
   color: #5bc0de;
 }
 
-a:hover {
+.my-category-elements a {
   text-decoration: none;
+}
+
+a:hover {
   cursor: pointer;
+  text-decoration: none;
 }
