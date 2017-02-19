@@ -5,98 +5,98 @@ import MusicElement from '../../containers/searchSound/MusicElement';
 let bestSellerDataSamples = [
   {
     Artist: {
-      Name: 'Imagine Dragons',
+      Name: 'LETSGO',
     },
     Music: {
-      Song: '/data/musics/Bright_Acoustic_guitar.mp3',
-      Title: 'Amsterdam',
-      Price: 1900,
-      Image: '/data/images/cover/City Of Stars.png',
-      Likes: 20,
-      Genre: ['Pop'],
-      Mood: ['Happy', 'Energetic'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Trip']
-    }
-  },
-  {
-    Artist: {
-      Name: 'Linkin Park',
-    },
-    Music: {
-      Song: '/data/musics/Bright_Easylistening_Guitar.mp3',
-      Title: 'Faint',
+      Song: '/data/musics/Energetic_Rock_Guitar.mp3',
+      Title: 'The way to travel',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
       Likes: 12,
-      Genre: ['Pop', 'Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Powerful']
+      Genre: ['락'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['기타'],
+      Keyword: ['Travel', 'Car']
     }
   },
   {
     Artist: {
-      Name: 'Twenty One Pilots',
+      Name: 'LETSGO',
     },
     Music: {
-      Song: '/data/musics/easylistening_Emotional_Guitar.mp3',
-      Title: 'Car Radio',
+      Song: '/data/musics/Energetic_Soul_Brass.mp3',
+      Title: 'Village Festival',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
-      Likes: 200,
-      Genre: ['Pop'],
-      Mood: ['Sad'],
-      Instrument: ['Popular', 'Electronic'],
-      Keyword: ['Sea']
+      Likes: 32,
+      Genre: ['소울'],
+      Mood: ['ENERGETIC'],
+      Instrument: ['관악기'],
+      Keyword: ['Festival', 'Jazz']
     }
   },
   {
     Artist: {
-      Name: 'Rise Against',
+      Name: 'Third Steps from the Hell',
     },
     Music: {
-      Song: '/data/musics/Rise Against - Prayer Of The Refugee.mp3',
-      Title: 'Prayer Of The Refugee',
+      Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR.mp3',
+      Title: 'Just before the War',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
-      Likes: 15,
-      Genre: ['Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Power']
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['MAGNIFICIENT'],
+      Instrument: ['보이스'],
+      Keyword: ['War', 'Tension']
     }
   },
   {
     Artist: {
-      Name: 'The Killers',
+      Name: 'Third Steps from the Hell',
     },
     Music: {
-      Song: '/data/musics/The Killers - Mr.Brightside.mp3',
-      Title: 'Mr.Brightside',
+      Song: '/data/musics/MAGNIFICIENT_CROSSOVER_CHOIR2.mp3',
+      Title: 'Chaser',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
-      Likes: 30,
-      Genre: ['Pop', 'Rock'],
-      Mood: ['Energetic'],
-      Instrument: ['Popular'],
-      Keyword: ['Miss']
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['MAGNIFICIENT'],
+      Instrument: ['보이스'],
+      Keyword: ['Chase', 'Tension']
     }
   },
   {
     Artist: {
-      Name: 'Evanescence',
+      Name: 'Child',
     },
     Music: {
-      Song: '/data/musics/Evanescence - Bring Me To Life.mp3',
-      Title: 'Bring Me To Life',
+      Song: '/data/musics/Tension_Crossover_String.mp3',
+      Title: 'Haunted house',
       Price: 1900,
       Image: '/data/images/cover/City Of Stars.png',
-      Likes: 90,
-      Genre: ['Rock'],
-      Mood: ['Sad'],
-      Instrument: ['Popular'],
-      Keyword: ['Miss']
+      Likes: 32,
+      Genre: ['크로스오버'],
+      Mood: ['TENSION'],
+      Instrument: ['스트링'],
+      Keyword: ['Ghost', 'Fear']
+    }
+  },
+  {
+    Artist: {
+      Name: 'Bertycox',
+    },
+    Music: {
+      Song: '/data/musics/BertycoX - The Signal.mp3',
+      Title: 'The signal',
+      Price: 1900,
+      Image: '/data/images/cover/City Of Stars.png',
+      Likes: 32,
+      Genre: ['일렉트로닉'],
+      Mood: ['ENERGETIC', 'DANCY'],
+      Instrument: ['신스'],
+      Keyword: ['God', 'Good']
     }
   },
 ];
