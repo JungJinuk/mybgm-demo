@@ -11,6 +11,14 @@ import categoryboardCSS from '../../components/categoryBoard/categoryboard.css';
 
 class MainPage extends Component {
   render() {
+    // constructor(props){
+    //   super(props)
+    //   this.state{
+        
+    //   }
+    // }
+
+
     return (
       <div className="my-main-page">
         <NaviBar/>
