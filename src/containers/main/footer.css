@@ -7,3 +7,13 @@ footer {
 .company {
   padding-top: 70px;
 }
+
+.fa.sns-icon {
+  margin: 7px;
+}
+
+.fa.sns-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: black;
+}

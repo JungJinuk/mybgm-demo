@@ -7,7 +7,11 @@ class SNS extends Component {
         <address>
           <strong>MyBGM, Inc. 2017</strong>
         </address>
-        <span className="glyphicon glyphicon-search" aria-hidden="true"></span>
+        <i style={{fontSize:"24px"}} className="fa sns-icon">&#xf082;</i>
+        <i style={{fontSize:"24px"}} className="fa sns-icon">&#xf081;</i>
+        <i style={{fontSize:"24px"}} className="fa sns-icon">&#xf0d4;</i>
+        <i style={{fontSize:"24px"}} className="fa sns-icon">&#xf16a;</i>
+        <i style={{fontSize:"24px"}} className="fa sns-icon">&#xf16d;</i>
       </div>
     );
   }

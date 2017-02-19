@@ -8,10 +8,7 @@ class Footer extends Component {
       <div>
         <footer className="container-fluid text-center">
           <div className="row">
-            <div className="col-lg-6 col-lg-offset-3">
-              <Pannel />
-              <Pannel />
-              <Pannel />
+            <div className="col-md-6 col-md-offset-3">
               <SNS />
             </div>
           </div>
