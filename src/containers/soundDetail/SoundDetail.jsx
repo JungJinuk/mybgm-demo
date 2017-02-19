@@ -10,6 +10,10 @@ import Media from '../../components/media/MediaList';
 import SoundDetailCSS from './SoundDetail.css';
 import MusicListCSS from '../../components/bestSellerBoard/musicList.css';
 
+
+//test
+import shadow from './shadow.css'
+
 const bestSeller = {
     Artist: {
       Name: 'Imagine Dragons',

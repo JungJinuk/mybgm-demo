@@ -31,7 +31,7 @@ class PurchaseBoard extends Component {
     });
 
     return (
-      <div>
+      <div className="shadow">
         <div className="row box-boarder">
           <div className="col-md-12">
             <div className="row">
