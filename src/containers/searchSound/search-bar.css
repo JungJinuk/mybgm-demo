@@ -1,7 +1,7 @@
 .search-input {
+  background-image: url("/images/happy.jpg");
   background-position: center;
   background-size: cover;
-  background-image: url("/images/happy.jpg");
   padding-top: 327px;
   height: 500px;
 }
@@ -19,5 +19,10 @@
 .list-group.autocomplete a {
   padding-right: 100px;
   cursor: pointer;
+}
+
+.my-search-ment {
+  color: #FFF;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 

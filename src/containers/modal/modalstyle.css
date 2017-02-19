@@ -18,7 +18,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-bottom: 1px solid #e1e1e1;
-} 
+}
 
 .fb-login {
   display: block;
@@ -84,6 +84,7 @@
   font-weight: 600;
   transition: 0.4s;
 }
+
 .signin-form-submit {
   outline: 0;
   width: 100%;

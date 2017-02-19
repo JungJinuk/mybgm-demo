@@ -72,8 +72,8 @@ class SearchBar extends Component {
     return (
       <div className="search-input">
         <div className="container">
-          <div className="my-display-middle my-text-gray my-center">
-            <h3>{searchMent}</h3>
+          <div className="my-center my-display-middle">
+            <h3 className="my-search-ment">{searchMent}</h3>
           </div>
           <div className="row">
             <form onSubmit={this.handleSubmit}>

@@ -5,7 +5,10 @@ const opt={
   height:50,
   width:500,
   // fillParent: true,
-  minPxPerSec: 5
+  minPxPerSec: 5,
+  normalize: true,
+  pixelRatio: 1,
+  backend: "MediaElement"
 };
 
 class WaveController extends Component {

@@ -134,7 +134,7 @@ class RegistForm extends Component {
         <div className="form-group">
           <div className="col-md-10 col-md-offset-2">
             <p className="text-right">
-              <button type="submit" className="btn btn-primary">음원 등록 신청</button>
+              <button type="submit" className="btn btn-info">음원 등록 신청</button>
             </p>
           </div>
         </div>

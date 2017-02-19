@@ -18,7 +18,6 @@ class MainPage extends Component {
     //   }
     // }
 
-
     return (
       <div className="my-main-page">
         <NaviBar/>
