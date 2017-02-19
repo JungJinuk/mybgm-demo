@@ -54,17 +54,21 @@ class CategoryBoard extends Component {
 
     return (
       <div className="container my-categoryboard">
+
         <div className="row">
-          <div className="col-md-offset-2 col-md-8">
+          <div className="col-md-offset-3 col-md-6">
             <ul className="nav nav-pills nav-justified">
               {categoryTabs}
             </ul>
           </div>
         </div>
+
         <hr />
+
         <div className="row">
           {categoryContent}
         </div>
+
       </div>
     );
   }

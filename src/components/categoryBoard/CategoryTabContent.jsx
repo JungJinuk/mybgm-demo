@@ -5,7 +5,7 @@ class CategoryTabContent extends Component {
   render() {
     var categoryElement = this.props.element;
     return (
-      <div className="col-md-2 my-category-elements">
+      <div className="col-md-4 my-category-elements">
         <Link to={`sound/search/${categoryElement}`}>
           <h4 className="my-category-element-h4">{categoryElement}</h4></Link>
       </div>
