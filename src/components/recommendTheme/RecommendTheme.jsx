@@ -5,7 +5,7 @@ class RecommendTheme extends Component {
   render() {
     return (
       <div className="col-md-2">
-        <Link to={`sound/search/${themeName}`}>
+        <Link to="sound/search">
           <img src="" alt="" />
         </Link>
       </div>

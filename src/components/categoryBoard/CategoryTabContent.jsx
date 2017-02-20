@@ -13,7 +13,7 @@ class CategoryTabContent extends Component {
   }
 }
 
-componentName.propTypes = {
+CategoryTabContent.propTypes = {
   element: PropTypes.string
 };
 
