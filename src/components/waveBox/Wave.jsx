@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import Wavesurfer from '../../../lib/react-wavesurfer';
 
 const opt={
-  height:180,
+  height:130,
   width:200,
   // fillParent: true,
   minPxPerSec: 5,
