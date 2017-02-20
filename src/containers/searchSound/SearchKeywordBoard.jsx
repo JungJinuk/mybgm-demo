@@ -15,17 +15,17 @@ class SearchKeywordBoard extends Component {
 
   render() {
     const h4Ment = "원하시는 검색어나 카테고리를 추가하세요",
-    searchKeywordCards = this.props.searchKeywords.map((keyword, id) => {
-      return (
-        <h4 key={id} className="my-keyword-board">
-          <span className="label label-info">{keyword}{' '}
-            <a onClick={() => this.handleKeywordDelete(id)} className="my-remove-keyword">
-              <span className="glyphicon glyphicon-remove" aria-hidden="true" />
-            </a>
-          </span>
-        </h4>
-      );
-    });
+      searchKeywordCards = this.props.searchKeywords.map((keyword, id) => {
+        return (
+          <h4 key={id} className="my-keyword-board">
+            <span className="label label-info">{keyword}{' '}
+              <a onClick={() => this.handleKeywordDelete(id)} className="my-remove-keyword">
+                <span className="glyphicon glyphicon-remove" aria-hidden="true" />
+              </a>
+            </span>
+          </h4>
+        );
+      });
 
     return (
       <div className="search-keyword">

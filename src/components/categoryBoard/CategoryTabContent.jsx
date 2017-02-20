@@ -13,4 +13,10 @@ class CategoryTabContent extends Component {
   }
 }
 
+componentName.propTypes = {
+  element: PropTypes.string
+};
+
+
+
 export default CategoryTabContent;
