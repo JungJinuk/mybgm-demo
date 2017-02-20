@@ -14,10 +14,10 @@ class AuthorProfile extends Component {
               <span className="author-name">Alec_Koff</span>
               <button className="btn btn-default pull-right">포트폴리오</button>
               <div className="author-badge">
-                <img className="" src="/images/author.jpg" alt="author"/>
-                <img className="" src="/images/author.jpg" alt="author"/>
-                <img className="" src="/images/author.jpg" alt="author"/>
-                <img className="" src="/images/author.jpg" alt="author"/>
+                <img className="" src="/images/badge/b_1.png" alt="badge"/>
+                <img className="" src="/images/badge/b_2.png" alt="badge"/>
+                <img className="" src="/images/badge/b_3.png" alt="badge"/>
+                <img className="" src="/images/badge/b_4.png" alt="badge"/>
               </div>
             </div>
           </div>

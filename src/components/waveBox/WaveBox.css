@@ -1,0 +1,24 @@
+.wave-box-boarder {
+    margin: 20px 10px 20px 10px;
+    padding: 100px 100px 0px 100px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: #212121;
+}
+
+.music-title {
+    padding-top: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #f7f7f7;
+}
+
+.music-author {
+    font-size: large;
+    color: #f7f7f7;
+}
+
+.music-tag {
+    color: #a0a0a0;
+}
