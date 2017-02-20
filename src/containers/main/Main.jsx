@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer';
 import SearchBoard from '../../components/searchBar/SearchBoard';
 import CategoryBoard from '../../components/categoryBoard/CategoryBoard';
 import BestSellerBoard from '../../components/bestSellerBoard/BestSellerBoard';
+import RecommendThemeBoard from '../../components/recommendTheme/RecommendThemeBoard';
 
 import css from './main.css';
 import categoryboardCSS from '../../components/categoryBoard/categoryboard.css';
@@ -23,6 +24,8 @@ class MainPage extends Component {
         <NaviBar/>
         <SearchBoard style={css}/>
         <hr/>
+        <RecommendThemeBoard />
+        <hr />
         <BestSellerBoard/>
         <CategoryBoard style={categoryboardCSS}/>
         <Footer/>

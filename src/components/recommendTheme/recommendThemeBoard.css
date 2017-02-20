@@ -1,0 +1,34 @@
+.theme-cover {
+  width :120px;
+  height:120px;
+  transition: 0.4s;
+}
+
+.theme-name {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 45px;
+  font-family: "Nanum Gothic", "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #FFF;
+  opacity: 1;
+}
+
+.theme-name:hover {
+  color: #FFF;
+  opacity: 1;
+  transition: 0.4s;
+  visibility: visible;
+}
+
+.col-md-2.main-theme-wrapper {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.theme-cover:hover {
+  opacity: 0.6;
+  transform: scale(1.1);
+  transition: 0.4s;
+  visibility: visible;
+}
